@@ -1,19 +1,19 @@
 ## sprTracker
-* **Description =** putdeschere
+* **Description =** HealthIcon object will be attach to this FlxSprite object
 * **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
 
 ## isOldIcon
-* **Description =** putdeschere
+* **Description =** If true, uses bf old icon
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## isPlayer
-* **Description =** putdeschere
+* **Description =** Is character on bf side?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## char
-* **Description =** putdeschere
+* **Description =** Current character name
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ''
 

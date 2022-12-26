@@ -1,139 +1,119 @@
 ## dialogue
-* **Description =** putdeschere
+* **Description =** Text object of dialogue
 * **Type =** [TypedAlphabet](https://api.haxeflixel.com/TypedAlphabet.html)
 
 ## dialogueList
-* **Description =** putdeschere
+* **Description =** Array with dialogue texts
 * **Type =** [DialogueFile](https://api.haxeflixel.com/DialogueFile.html)
 * **Default value =** null
 
 ## finishThing
-* **Description =** putdeschere
+* **Description =** Executes when dialogue finished
 * **Type =** [Void->Void](https://api.haxeflixel.com/Void.html)
 
 ## nextDialogueThing
-* **Description =** putdeschere
+* **Description =** Executes when next dialogue switches
 * **Type =** [Void->Void](https://api.haxeflixel.com/Void.html)
 * **Default value =** null
 
 ## skipDialogueThing
-* **Description =** putdeschere
+* **Description =** Executes when dialogue skipped
 * **Type =** [Void->Void](https://api.haxeflixel.com/Void.html)
 * **Default value =** null
 
 ## bgFade
-* **Description =** putdeschere
+* **Description =** Image object of bg
 * **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
 * **Default value =** null
 
 ## box
-* **Description =** putdeschere
+* **Description =** dialogue box
 * **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
 
 ## textToType
-* **Description =** putdeschere
+* **Description =** Not used variable
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ''
 
 ## arrayCharacters
-* **Description =** putdeschere
+* **Description =** Array with dialogue characters
 * **Type =** [Array<DialogueCharacter>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## currentText
-* **Description =** putdeschere
+* **Description =** Index of current dialogue
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## offsetPos
-* **Description =** putdeschere
+* **Description =** X offset of dialogue character
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** -600
 
 ## textBoxTypes
-* **Description =** putdeschere
+* **Description =** Array with dialogue box types
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 * **Default value =** ['normal', 'angry']
 
 ## curCharacter
-* **Description =** putdeschere
+* **Description =** Current character in dialogue
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ""
 
 ## dialogueEnded
-* **Description =** putdeschere
+* **Description =** Dialogue ended?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## LEFT_CHAR_X
-* **Description =** putdeschere
+* **Description =** X of dialogue left character
 * **Static**
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** -60
 
 ## RIGHT_CHAR_X
-* **Description =** putdeschere
+* **Description =** X of dialogue right character
 * **Static**
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** -100
 
 ## DEFAULT_CHAR_Y
-* **Description =** putdeschere
+* **Description =** Y of dialogue characters
 * **Static**
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 60
 
-## charsMap
-* **Description =** putdeschere
-* **Type =** [Map<String, Bool>](https://api.haxeflixel.com/Map.html)
-* **Default value =** new Map<String, Bool>()
-
-## y
-* **Description =** putdeschere
-* **Type =** [Float](https://api.haxeflixel.com/Float.html)
-* **Default value =** DEFAULT_CHAR_Y
-
-## char
-* **Description =** putdeschere
-* **Type =** [DialogueCharacter](https://api.haxeflixel.com/DialogueCharacter.html)
-* **Default value =** new DialogueCharacter(x + offsetPos, y, individualChar)
-
-## saveY
-* **Description =** putdeschere
-* **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
-* **Default value =** false
-
 ## DEFAULT_TEXT_Y
-* **Description =** putdeschere
+* **Description =** Y of dialogue text
 * **Static**
 * **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
 
 ## LONG_TEXT_ADD
-* **Description =** putdeschere
+* **Description =** Y offset of dialogue text
 * **Static**
 * **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
 
 ## scrollSpeed
-* **Description =** putdeschere
+* **Description =** Scroll speed of dialogue
 * **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
 
 ## daText
-* **Description =** putdeschere
+* **Description =** text object of dialogue
 * **Type =** [TypedAlphabet](https://api.haxeflixel.com/TypedAlphabet.html)
 * **Default value =** null
 
 ## ignoreThisFrame
-* **Description =** putdeschere
+* **Description =** First frame is reserved for loading dialogue images
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** true
 
 ## closeSound
-* **Description =** putdeschere
+* **Description =** Sound of close dialogue
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** 'dialogueClose'
 
 ## closeVolume
-* **Description =** putdeschere
+* **Description =** Volume of sound of close dialogue
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 

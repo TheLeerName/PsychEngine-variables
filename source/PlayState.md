@@ -1,811 +1,669 @@
 ## STRUM_X
-* **Description =** putdeschere
+* **Description =** Start X of playerStrums
 * **Static**
 * **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
 
 ## STRUM_X_MIDDLESCROLL
-* **Description =** putdeschere
+* **Description =** Start X of playerStrums when middleScroll enabled
 * **Static**
 * **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
 
 ## ratingStuff
-* **Description =** putdeschere
+* **Description =** Array of ratings: [name:String, percent:Float]
 * **Static**
 * **Type =** [Array<Dynamic>](https://api.haxeflixel.com/Array.html)
 * **Default value =** [['You Suck!', 0.2],['Shit', 0.4],['Bad', 0.5],['Bruh', 0.6],['Meh', 0.69],['Nice', 0.7],['Good', 0.8],['Great', 0.9],['Sick!', 1],['Perfect!!', 1]]
 
 ## isCameraOnForcedPos
-* **Description =** putdeschere
+* **Description =** If true, camera wont move
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## boyfriendMap
-* **Description =** putdeschere
+* **Description =** Map of loaded boyfriends: name:String => bf:Boyfriend
 * **Type =** [Map<String, Boyfriend>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## dadMap
-* **Description =** putdeschere
+* **Description =** Map of loaded dads: name:String => char:Character
 * **Type =** [Map<String, Character>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## gfMap
-* **Description =** putdeschere
+* **Description =** Map of loaded gfs: name:String => char:Character
 * **Type =** [Map<String, Character>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## variables
-* **Description =** putdeschere
+* **Description =** Map of modchart variables: name:String => value:Dynamic
 * **Type =** [Map<String, Dynamic>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## modchartTweens
-* **Description =** putdeschere
+* **Description =** Map of modchart tweens: name:String => tween:FlxTween
 * **Type =** [Map<String, FlxTween>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, FlxTween>()
 
 ## modchartSprites
-* **Description =** putdeschere
+* **Description =** Map of modchart sprites: name:String => sprite:ModchartSprite
 * **Type =** [Map<String, ModchartSprite>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, ModchartSprite>()
 
 ## modchartTimers
-* **Description =** putdeschere
+* **Description =** Map of modchart timers: name:String => timer:FlxTimer
 * **Type =** [Map<String, FlxTimer>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, FlxTimer>()
 
 ## modchartSounds
-* **Description =** putdeschere
+* **Description =** Map of modchart sounds: name:String => sound:FlxSound
 * **Type =** [Map<String, FlxSound>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, FlxSound>()
 
 ## modchartTexts
-* **Description =** putdeschere
+* **Description =** Map of modchart texts: name:String => text:FlxText
 * **Type =** [Map<String, ModchartText>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, ModchartText>()
 
 ## modchartSaves
-* **Description =** putdeschere
+* **Description =** Map of modchart saves: name:String => save:FlxSave
 * **Type =** [Map<String, FlxSave>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, FlxSave>()
 
 ## boyfriendMap
-* **Description =** putdeschere
+* **Description =** Map of loaded boyfriends: name:String => bf:Boyfriend
 * **Type =** [Map<String, Boyfriend>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, Boyfriend>()
 
 ## dadMap
-* **Description =** putdeschere
+* **Description =** Map of loaded dads: name:String => char:Character
 * **Type =** [Map<String, Character>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, Character>()
 
 ## gfMap
-* **Description =** putdeschere
+* **Description =** Map of loaded gfs: name:String => char:Character
 * **Type =** [Map<String, Character>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, Character>()
 
 ## variables
-* **Description =** putdeschere
+* **Description =** Map of modchart variables: name:String => value:Dynamic
 * **Type =** [Map<String, Dynamic>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, Dynamic>()
 
 ## modchartTweens
-* **Description =** putdeschere
+* **Description =** Map of modchart tweens: name:String => tween:FlxTween
 * **Type =** [Map<String, FlxTween>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## modchartSprites
-* **Description =** putdeschere
+* **Description =** Map of modchart sprites: name:String => sprite:ModchartSprite
 * **Type =** [Map<String, ModchartSprite>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## modchartTimers
-* **Description =** putdeschere
+* **Description =** Map of modchart timers: name:String => timer:FlxTimer
 * **Type =** [Map<String, FlxTimer>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## modchartSounds
-* **Description =** putdeschere
+* **Description =** Map of modchart sounds: name:String => sound:FlxSound
 * **Type =** [Map<String, FlxSound>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## modchartTexts
-* **Description =** putdeschere
+* **Description =** Map of modchart texts: name:String => text:FlxText
 * **Type =** [Map<String, ModchartText>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## modchartSaves
-* **Description =** putdeschere
+* **Description =** Map of modchart saves: name:String => save:FlxSave
 * **Type =** [Map<String, FlxSave>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map()
 
 ## BF_X
-* **Description =** putdeschere
+* **Description =** Start X of boyfriend
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 770
 
 ## BF_Y
-* **Description =** putdeschere
+* **Description =** Start Y of boyfriend
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 100
 
 ## DAD_X
-* **Description =** putdeschere
+* **Description =** Start X of dad
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 100
 
 ## DAD_Y
-* **Description =** putdeschere
+* **Description =** Start Y of dad
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 100
 
 ## GF_X
-* **Description =** putdeschere
+* **Description =** Start X of gf
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 400
 
 ## GF_Y
-* **Description =** putdeschere
+* **Description =** Start Y of gf
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 130
 
 ## songSpeedTween
-* **Description =** putdeschere
+* **Description =** Tween object of songSpeed
 * **Type =** [FlxTween](https://api.haxeflixel.com/flixel/tweens/FlxTween.html)
 
 ## songSpeed
-* **Description =** putdeschere
+* **Description =** Current scroll speed of song
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## songSpeedType
-* **Description =** putdeschere
+* **Description =** Scroll speed type
 * **Type =** [String](https://api.haxeflixel.com/flixel/util/FlxStringUtil.html)
 * **Default value =** "multiplicative"
 
 ## noteKillOffset
-* **Description =** putdeschere
+* **Description =** Used for killing extremely late notes
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 350
 
 ## playbackRate
-* **Description =** putdeschere
+* **Description =** Playback rate of song
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## boyfriendGroup
-* **Description =** putdeschere
+* **Description =** Object group of boyfriends
 * **Type =** [FlxSpriteGroup](https://api.haxeflixel.com/flixel/group/FlxSpriteGroup.html)
 
 ## dadGroup
-* **Description =** putdeschere
+* **Description =** Object group of dads
 * **Type =** [FlxSpriteGroup](https://api.haxeflixel.com/flixel/group/FlxSpriteGroup.html)
 
 ## gfGroup
-* **Description =** putdeschere
+* **Description =** Object group of gfs
 * **Type =** [FlxSpriteGroup](https://api.haxeflixel.com/flixel/group/FlxSpriteGroup.html)
 
 ## curStage
-* **Description =** putdeschere
+* **Description =** Current stage name
 * **Static**
 * **Type =** [String](https://api.haxeflixel.com/flixel/util/FlxStringUtil.html)
 * **Default value =** ''
 
 ## isPixelStage
-* **Description =** putdeschere
+* **Description =** Is stage pixel?
 * **Static**
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## SONG
-* **Description =** putdeschere
+* **Description =** JSON object of song data
 * **Static**
 * **Type =** [SwagSong](https://api.haxeflixel.com/Song/SwagSong.html)
 * **Default value =** null
 
 ## isStoryMode
-* **Description =** putdeschere
+* **Description =** Is song started from story mode?
 * **Static**
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## storyWeek
-* **Description =** putdeschere
+* **Description =** Current week
 * **Static**
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## storyPlaylist
-* **Description =** putdeschere
+* **Description =** Current playlist of songs in week
 * **Static**
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## storyDifficulty
-* **Description =** putdeschere
+* **Description =** Current difficulty
 * **Static**
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 1
 
 ## spawnTime
-* **Description =** putdeschere
+* **Description =** Note spawns earlier by this value
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 2000
 
 ## vocals
-* **Description =** putdeschere
+* **Description =** Sound object of vocals
 * **Type =** [FlxSound](https://api.haxeflixel.com/flixel/system/FlxSound.html)
 
 ## dad
-* **Description =** putdeschere
+* **Description =** Current dad object
 * **Type =** [Character](https://api.haxeflixel.com/editors/CharacterEditorState.html)
 * **Default value =** null
 
 ## gf
-* **Description =** putdeschere
+* **Description =** Current gf object
 * **Type =** [Character](https://api.haxeflixel.com/editors/CharacterEditorState.html)
 * **Default value =** null
 
 ## boyfriend
-* **Description =** putdeschere
+* **Description =** Current boyfriend object
 * **Type =** [Boyfriend](https://api.haxeflixel.com/Boyfriend.html)
 * **Default value =** null
 
 ## notes
-* **Description =** putdeschere
+* **Description =** Note group of spawned notes
 * **Type =** [FlxTypedGroup<Note>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
 
 ## unspawnNotes
-* **Description =** putdeschere
+* **Description =** Array of notes to spawn
 * **Type =** [Array<Note>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## eventNotes
-* **Description =** putdeschere
+* **Description =** Array of event notes
 * **Type =** [Array<EventNote>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## strumLine
-* **Description =** putdeschere
+* **Description =** Strumline object
 * **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
 
 ## camFollow
-* **Description =** putdeschere
+* **Description =** Used for camera follow
 * **Type =** [FlxPoint](https://api.haxeflixel.com/flixel/math/FlxPoint.html)
 
 ## camFollowPos
-* **Description =** putdeschere
+* **Description =** Used for camera follow
 * **Type =** [FlxObject](https://api.haxeflixel.com/flixel/FlxObject.html)
 
 ## prevCamFollow
-* **Description =** putdeschere
+* **Description =** Used for camera follow
 * **Static**
 * **Type =** [FlxPoint](https://api.haxeflixel.com/flixel/math/FlxPoint.html)
 
 ## prevCamFollowPos
-* **Description =** putdeschere
+* **Description =** Used for camera follow
 * **Static**
 * **Type =** [FlxObject](https://api.haxeflixel.com/flixel/FlxObject.html)
 
 ## strumLineNotes
-* **Description =** putdeschere
+* **Description =** StrumNote group for static notes
 * **Type =** [FlxTypedGroup<StrumNote>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
 
 ## opponentStrums
-* **Description =** putdeschere
+* **Description =** StrumNote group for static notes on opponent side
 * **Type =** [FlxTypedGroup<StrumNote>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
 
 ## playerStrums
-* **Description =** putdeschere
+* **Description =** StrumNote group for static notes on player side
 * **Type =** [FlxTypedGroup<StrumNote>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
 
 ## grpNoteSplashes
-* **Description =** putdeschere
+* **Description =** NoteSplashes group for note splashes
 * **Type =** [FlxTypedGroup<NoteSplash>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
 
 ## camZooming
-* **Description =** putdeschere
+* **Description =** Is camera zooming? Sets true on opponentNoteHit()
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## camZoomingMult
-* **Description =** putdeschere
+* **Description =** Multiplicator of camera zoom
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## camZoomingDecay
-* **Description =** putdeschere
+* **Description =** Decay of camera zoom
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## curSong
-* **Description =** putdeschere
+* **Description =** Current song name
 * **Type =** [String](https://api.haxeflixel.com/flixel/util/FlxStringUtil.html)
 * **Default value =** ""
 
 ## gfSpeed
-* **Description =** putdeschere
+* **Description =** Speed of dance gf
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 1
 
 ## health
-* **Description =** putdeschere
+* **Description =** Current health
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## combo
-* **Description =** putdeschere
+* **Description =** Value of pressed notes in a row
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## healthBarBG
-* **Description =** putdeschere
+* **Description =** Image object for healthBar BG
 * **Type =** [AttachedSprite](https://api.haxeflixel.com/AttachedSprite.html)
 
 ## healthBar
-* **Description =** putdeschere
+* **Description =** Health bar object
 * **Type =** [FlxBar](https://api.haxeflixel.com/flixel/ui/FlxBar.html)
 
 ## songPercent
-* **Description =** putdeschere
+* **Description =** Percent of time. Used for timeBar
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## timeBarBG
-* **Description =** putdeschere
+* **Description =** Image object for timeBar BG
 * **Type =** [AttachedSprite](https://api.haxeflixel.com/AttachedSprite.html)
 
 ## timeBar
-* **Description =** putdeschere
+* **Description =** Time bar object
 * **Type =** [FlxBar](https://api.haxeflixel.com/flixel/ui/FlxBar.html)
 
 ## ratingsData
-* **Description =** putdeschere
+* **Description =** Array of ratings
 * **Type =** [Array<Rating>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## sicks
-* **Description =** putdeschere
+* **Description =** Value of pressed sicks
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## goods
-* **Description =** putdeschere
+* **Description =** Value of pressed goods
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## bads
-* **Description =** putdeschere
+* **Description =** Value of pressed bads
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## shits
-* **Description =** putdeschere
+* **Description =** Value of pressed shits
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## generatedMusic
-* **Description =** putdeschere
+* **Description =** Is music started?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## endingSong
-* **Description =** putdeschere
+* **Description =** Is song ending?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## startingSong
-* **Description =** putdeschere
+* **Description =** Is song starting? 
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## updateTime
-* **Description =** putdeschere
+* **Description =** Used for timeBar
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** true
 
 ## changedDifficulty
-* **Description =** putdeschere
+* **Description =** Used for achievements
 * **Static**
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## chartingMode
-* **Description =** putdeschere
+* **Description =** Is charting mode opened?
 * **Static**
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## healthGain
-* **Description =** putdeschere
+* **Description =** Multiplicator of gain health
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## healthLoss
-* **Description =** putdeschere
+* **Description =** Multiplicator of loss health
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## instakillOnMiss
-* **Description =** putdeschere
+* **Description =** If true, miss sets health to 0
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## cpuControlled
-* **Description =** putdeschere
+* **Description =** If true, bot play is enabled
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## practiceMode
-* **Description =** putdeschere
+* **Description =** If true, practice mode is enabled
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## botplaySine
-* **Description =** putdeschere
+* **Description =** Used for alpha calculating of botplay text
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## botplayTxt
-* **Description =** putdeschere
+* **Description =** Text object for botplay text
 * **Type =** [FlxText](https://api.haxeflixel.com/flixel/text/FlxText.html)
 
 ## iconP1
-* **Description =** putdeschere
+* **Description =** HealthIcon object for player icon
 * **Type =** [HealthIcon](https://api.haxeflixel.com/HealthIcon.html)
 
 ## iconP2
-* **Description =** putdeschere
+* **Description =** HealthIcon object for opponent icon
 * **Type =** [HealthIcon](https://api.haxeflixel.com/HealthIcon.html)
 
 ## camHUD
-* **Description =** putdeschere
+* **Description =** Camera for HUD
 * **Type =** [FlxCamera](https://api.haxeflixel.com/flixel/FlxCamera.html)
 
 ## camGame
-* **Description =** putdeschere
+* **Description =** Camera for Game
 * **Type =** [FlxCamera](https://api.haxeflixel.com/flixel/FlxCamera.html)
 
 ## camOther
-* **Description =** putdeschere
+* **Description =** Camera for Pause Menu
 * **Type =** [FlxCamera](https://api.haxeflixel.com/flixel/FlxCamera.html)
 
 ## cameraSpeed
-* **Description =** putdeschere
+* **Description =** Camera follow speed
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## dialogue
-* **Description =** putdeschere
+* **Description =** Array of dialogue texts
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 * **Default value =** ['blah blah blah', 'coolswag']
 
 ## dialogueJson
-* **Description =** putdeschere
+* **Description =** DialogueFile object
 * **Type =** [DialogueFile](https://api.haxeflixel.com/DialogueFile.html)
 * **Default value =** null
 
-## dadbattleBlack
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## dadbattleLight
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## dadbattleSmokes
-* **Description =** putdeschere
-* **Type =** [FlxSpriteGroup](https://api.haxeflixel.com/flixel/group/FlxSpriteGroup.html)
-
-## halloweenBG
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## halloweenWhite
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## phillyLightsColors
-* **Description =** putdeschere
-* **Type =** [Array<FlxColor>](https://api.haxeflixel.com/Array.html)
-
-## phillyWindow
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## phillyStreet
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## phillyTrain
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## blammedLightsBlack
-* **Description =** putdeschere
-* **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
-
-## phillyWindowEvent
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## trainSound
-* **Description =** putdeschere
-* **Type =** [FlxSound](https://api.haxeflixel.com/flixel/system/FlxSound.html)
-
-## phillyGlowGradient
-* **Description =** putdeschere
-* **Type =** [PhillyGlow.PhillyGlowGradient](https://api.haxeflixel.com/PhillyGlow.PhillyGlowGradient.html)
-
-## phillyGlowParticles
-* **Description =** putdeschere
-* **Type =** [FlxTypedGroup<PhillyGlow.PhillyGlowParticle>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
-
-## limoKillingState
-* **Description =** putdeschere
-* **Type =** [Int](https://api.haxeflixel.com/Int.html)
-* **Default value =** 0
-
-## limo
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## limoMetalPole
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## limoLight
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## limoCorpse
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## limoCorpseTwo
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## bgLimo
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## grpLimoParticles
-* **Description =** putdeschere
-* **Type =** [FlxTypedGroup<BGSprite>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
-
-## grpLimoDancers
-* **Description =** putdeschere
-* **Type =** [FlxTypedGroup<BackgroundDancer>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
-
-## fastCar
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## upperBoppers
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## bottomBoppers
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## santa
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## heyTimer
-* **Description =** putdeschere
-* **Type =** [Float](https://api.haxeflixel.com/Float.html)
-
-## bgGirls
-* **Description =** putdeschere
-* **Type =** [BackgroundGirls](https://api.haxeflixel.com/BackgroundGirls.html)
-
-## wiggleShit
-* **Description =** putdeschere
-* **Type =** [WiggleEffect](https://api.haxeflixel.com/WiggleEffect/WiggleEffectType.html)
-* **Default value =** new WiggleEffect()
-
-## bgGhouls
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## tankWatchtower
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## tankGround
-* **Description =** putdeschere
-* **Type =** [BGSprite](https://api.haxeflixel.com/BGSprite.html)
-
-## tankmanRun
-* **Description =** putdeschere
-* **Type =** [FlxTypedGroup<TankmenBG>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
-
-## foregroundSprites
-* **Description =** putdeschere
-* **Type =** [FlxTypedGroup<BGSprite>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
-
 ## songScore
-* **Description =** putdeschere
+* **Description =** Current score
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## songHits
-* **Description =** putdeschere
+* **Description =** Current hits
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## songMisses
-* **Description =** putdeschere
+* **Description =** Current misses
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## scoreTxt
-* **Description =** putdeschere
+* **Description =** Text object for score text
 * **Type =** [FlxText](https://api.haxeflixel.com/flixel/text/FlxText.html)
 
 ## timeTxt
-* **Description =** putdeschere
+* **Description =** Text object for time text
 * **Type =** [FlxText](https://api.haxeflixel.com/flixel/text/FlxText.html)
 
 ## scoreTxtTween
-* **Description =** putdeschere
+* **Description =** Tween object for score text
 * **Type =** [FlxTween](https://api.haxeflixel.com/flixel/tweens/FlxTween.html)
 
 ## campaignScore
-* **Description =** putdeschere
+* **Description =** Current week score
 * **Static**
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## campaignMisses
-* **Description =** putdeschere
+* **Description =** Current week misses
 * **Static**
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## seenCutscene
-* **Description =** putdeschere
+* **Description =** Used for original weeks cutscenes
 * **Static**
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## deathCounter
-* **Description =** putdeschere
+* **Description =** Current deaths
 * **Static**
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## defaultCamZoom
-* **Description =** putdeschere
+* **Description =** Default camGame zoom
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1.05
 
 ## daPixelZoom
-* **Description =** putdeschere
+* **Description =** Used for pixel stage
 * **Static**
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 6
 
 ## singAnimations
-* **Description =** putdeschere
+* **Description =** Array of sing animation names
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 * **Default value =** ['singLEFT', 'singDOWN', 'singUP', 'singRIGHT']
 
 ## inCutscene
-* **Description =** putdeschere
+* **Description =** Is player in cutscene?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## skipCountdown
-* **Description =** putdeschere
+* **Description =** Is countdown will be skipped?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## songLength
-* **Description =** putdeschere
+* **Description =** Length of song
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## boyfriendCameraOffset
-* **Description =** putdeschere
+* **Description =** Offsets for camera follow to boyfriend
 * **Type =** [Array<Float>](https://api.haxeflixel.com/Array.html)
 * **Default value =** null
 
 ## opponentCameraOffset
-* **Description =** putdeschere
+* **Description =** Offsets for camera follow to dad
 * **Type =** [Array<Float>](https://api.haxeflixel.com/Array.html)
 * **Default value =** null
 
 ## girlfriendCameraOffset
-* **Description =** putdeschere
+* **Description =** Offsets for camera follow to gf
 * **Type =** [Array<Float>](https://api.haxeflixel.com/Array.html)
 * **Default value =** null
 
 ## storyDifficultyText
-* **Description =** putdeschere
+* **Description =** Used for Discord Rich Presence
 * **Type =** [String](https://api.haxeflixel.com/flixel/util/FlxStringUtil.html)
 * **Default value =** ""
 
 ## detailsText
-* **Description =** putdeschere
+* **Description =** Used for Discord Rich Presence
 * **Type =** [String](https://api.haxeflixel.com/flixel/util/FlxStringUtil.html)
 * **Default value =** ""
 
 ## detailsPausedText
-* **Description =** putdeschere
+* **Description =** Used for Discord Rich Presence
 * **Type =** [String](https://api.haxeflixel.com/flixel/util/FlxStringUtil.html)
 * **Default value =** ""
 
 ## keysPressed
-* **Description =** putdeschere
+* **Description =** Used for achievements
 * **Type =** [Array<Bool>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## boyfriendIdleTime
-* **Description =** putdeschere
+* **Description =** Used for achievements
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0.0
 
 ## boyfriendIdled
-* **Description =** putdeschere
+* **Description =** Used for achievements
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## instance
-* **Description =** putdeschere
+* **Description =** Instance for current state
 * **Static**
 * **Type =** [PlayState](https://api.haxeflixel.com/PlayState.html)
 
 ## luaArray
-* **Description =** putdeschere
+* **Description =** Array of lua states
 * **Type =** [Array<FunkinLua>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## luaDebugGroup
-* **Description =** putdeschere
+* **Description =** Array of debug lua texts
 * **Type =** [FlxTypedGroup<DebugLuaText>](https://api.haxeflixel.com/flixel/group/FlxGroup/FlxTypedGroup.html)
 
 ## introSoundsSuffix
-* **Description =** putdeschere
+* **Description =** Suffix for intro sounds
 * **Type =** [String](https://api.haxeflixel.com/flixel/util/FlxStringUtil.html)
 * **Default value =** ''
 
 ## debugKeysChart
-* **Description =** putdeschere
+* **Description =** Array of keys to open chart menu
 * **Type =** [Array<FlxKey>](https://api.haxeflixel.com/Array.html)
 
 ## debugKeysCharacter
-* **Description =** putdeschere
+* **Description =** Array of keys to open character editor
 * **Type =** [Array<FlxKey>](https://api.haxeflixel.com/Array.html)
 
 ## keysArray
-* **Description =** putdeschere
+* **Description =** Array of keybinds
 * **Type =** [Array<Dynamic>](https://api.haxeflixel.com/Array.html)
 
 ## controlArray
-* **Description =** putdeschere
+* **Description =** Used for note press
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 
 ## precacheList
-* **Description =** putdeschere
+* **Description =** Map of precaching assets: assetName:String => type:String
 * **Type =** [Map<String, String>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, String>()
 
 ## lastRating
-* **Description =** putdeschere
+* **Description =** Stores the last judgement object
 * **Static**
 * **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
 
 ## lastCombo
-* **Description =** putdeschere
+* **Description =** Stores the last combo sprite object
 * **Static**
 * **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
 
 ## lastScore
-* **Description =** putdeschere
+* **Description =** Stores the last combo score objects in an array
 * **Static**
 * **Type =** [Array<FlxSprite>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []

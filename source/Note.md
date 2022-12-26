@@ -1,287 +1,287 @@
 ## extraData
-* **Description =** putdeschere
+* **Description =** Not used variable
 * **Type =** [Map<String,Dynamic>](https://api.haxeflixel.com/Map.html)
 * **Default value =** []
 
 ## strumTime
-* **Description =** putdeschere
+* **Description =** Strum time of current note in milliseconds
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## mustPress
-* **Description =** putdeschere
+* **Description =** If true, note will be count on bf side
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## noteData
-* **Description =** putdeschere
+* **Description =** 0 = Left note, 1 = Down note, 2 = Up note, 3 = Right note
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## canBeHit
-* **Description =** putdeschere
+* **Description =** Is note can be hit?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## tooLate
-* **Description =** putdeschere
+* **Description =** Is note missed?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## wasGoodHit
-* **Description =** putdeschere
+* **Description =** Is note pressed?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## ignoreNote
-* **Description =** putdeschere
+* **Description =** If true, note ignores by opponent, and miss this note not counts as miss
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## hitByOpponent
-* **Description =** putdeschere
+* **Description =** Is note pressed by opponent?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## noteWasHit
-* **Description =** putdeschere
+* **Description =** Not used variable
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## prevNote
-* **Description =** putdeschere
+* **Description =** Previous note, used for sustains
 * **Type =** [Note](https://api.haxeflixel.com/Note.html)
 
 ## nextNote
-* **Description =** putdeschere
+* **Description =** Next note, used for sustains
 * **Type =** [Note](https://api.haxeflixel.com/Note.html)
 
 ## spawned
-* **Description =** putdeschere
+* **Description =** Is note spawned?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## tail
-* **Description =** putdeschere
+* **Description =** Array of sustains
 * **Type =** [Array<Note>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## parent
-* **Description =** putdeschere
+* **Description =** Not used variable
 * **Type =** [Note](https://api.haxeflixel.com/Note.html)
 
 ## blockHit
-* **Description =** putdeschere
+* **Description =** If true, player cant hit this note
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## sustainLength
-* **Description =** putdeschere
+* **Description =** Length of sustain note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## isSustainNote
-* **Description =** putdeschere
+* **Description =** Is note sustain?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## noteType
-* **Description =** putdeschere
+* **Description =** Name of note type
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** null
 
 ## eventName
-* **Description =** putdeschere
+* **Description =** Name of event, uses for event note
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ''
 
 ## eventLength
-* **Description =** putdeschere
+* **Description =** Length of event, uses for event note
 * **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## eventVal1
-* **Description =** putdeschere
+* **Description =** 1 value of event, uses for event note
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ''
 
 ## eventVal2
-* **Description =** putdeschere
+* **Description =** 2 value of event, uses for event note
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ''
 
 ## colorSwap
-* **Description =** putdeschere
+* **Description =** Shader for color swap note
 * **Type =** [ColorSwap](https://api.haxeflixel.com/ColorSwap.html)
 
 ## inEditor
-* **Description =** putdeschere
+* **Description =** Is note in charting menu?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## animSuffix
-* **Description =** putdeschere
+* **Description =** Suffix of animation note, uses when note type is "Alt Animation"
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ''
 
 ## gfNote
-* **Description =** putdeschere
+* **Description =** Is note will be pressed by gf? Uses when note type is "GF Sing"
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## earlyHitMult
-* **Description =** putdeschere
+* **Description =** Multiplicator for early hit note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0.5
 
 ## lateHitMult
-* **Description =** putdeschere
+* **Description =** Multiplicator for late hit note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## lowPriority
-* **Description =** putdeschere
+* **Description =** Uses when note type is "Hurt Note"
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## swagWidth
-* **Description =** putdeschere
+* **Description =** Width of note
 * **Static**
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 160 * 0.7
 
 ## colArray
-* **Description =** putdeschere
+* **Description =** Array with strum note names
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 * **Default value =** ['purple', 'blue', 'green', 'red']
 
 ## pixelInt
-* **Description =** putdeschere
+* **Description =** Array with strum note indexes
 * **Type =** [Array<Int>](https://api.haxeflixel.com/Array.html)
 * **Default value =** [0, 1, 2, 3]
 
 ## noteSplashDisabled
-* **Description =** putdeschere
+* **Description =** Is note hasnt splash?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## noteSplashTexture
-* **Description =** putdeschere
+* **Description =** Name of note splash texture
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** null
 
 ## noteSplashHue
-* **Description =** putdeschere
+* **Description =** Hue of note splash texture
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## noteSplashSat
-* **Description =** putdeschere
+* **Description =** Saturation of note splash texture
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## noteSplashBrt
-* **Description =** putdeschere
+* **Description =** Brightness of note splash texture
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## offsetX
-* **Description =** putdeschere
+* **Description =** X offset of note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## offsetY
-* **Description =** putdeschere
+* **Description =** Y offset of note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## offsetAngle
-* **Description =** putdeschere
+* **Description =** Angle offset of note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## multAlpha
-* **Description =** putdeschere
+* **Description =** Multiplicator for alpha of note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## multSpeed
-* **Description =** putdeschere
+* **Description =** Multiplicator for scroll speed of note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## copyX
-* **Description =** putdeschere
+* **Description =** Is note calculates X? Can be used for custom positioning of note
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** true
 
 ## copyY
-* **Description =** putdeschere
+* **Description =** Is note calculates Y? Can be used for custom positioning of note
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** true
 
 ## copyAngle
-* **Description =** putdeschere
+* **Description =** Is note calculates angle? Can be used for custom positioning of note
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** true
 
 ## copyAlpha
-* **Description =** putdeschere
+* **Description =** Is note calculates alpha? Can be used for custom editing alpha of note
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** true
 
 ## hitHealth
-* **Description =** putdeschere
+* **Description =** Value of heal on hit note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0.023
 
 ## missHealth
-* **Description =** putdeschere
+* **Description =** Value of hurt on miss note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0.0475
 
 ## rating
-* **Description =** putdeschere
+* **Description =** Rating name of note
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** 'unknown'
 
 ## ratingMod
-* **Description =** putdeschere
+* **Description =** 9 = unknown, 0.25 = shit, 0.5 = bad, 0.75 = good, 1 = sick
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## ratingDisabled
-* **Description =** putdeschere
+* **Description =** Is rating disabled on this note?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## texture
-* **Description =** putdeschere
+* **Description =** Name of current file name of notes
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** null
 
 ## noAnimation
-* **Description =** putdeschere
+* **Description =** Is note hasnt animation?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## noMissAnimation
-* **Description =** putdeschere
+* **Description =** Is note hasnt miss animation?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## hitCausesMiss
-* **Description =** putdeschere
+* **Description =** If true, pressing note counts as miss
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## distance
-* **Description =** putdeschere
+* **Description =** Unfinished variable, distance of note
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 2000
 
 ## hitsoundDisabled
-* **Description =** putdeschere
+* **Description =** Is hitsound disabled of pressing this note?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 

@@ -1,56 +1,56 @@
 ## boyfriend
-* **Description =** putdeschere
+* **Description =** Boyfriend object for bf
 * **Type =** [Boyfriend](https://api.haxeflixel.com/Boyfriend.html)
 
 ## camFollow
-* **Description =** putdeschere
+* **Description =** Uses for camera follow
 * **Type =** [FlxPoint](https://api.haxeflixel.com/flixel/math/FlxPoint.html)
 
 ## camFollowPos
-* **Description =** putdeschere
+* **Description =** Uses for camera follow
 * **Type =** [FlxObject](https://api.haxeflixel.com/flixel/FlxObject.html)
 
 ## updateCamera
-* **Description =** putdeschere
+* **Description =** Uses for camera follow
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## playingDeathSound
-* **Description =** putdeschere
+* **Description =** Uses for playing death sound
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
 ## stageSuffix
-* **Description =** putdeschere
+* **Description =** Not used variable
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ""
 
 ## characterName
-* **Description =** putdeschere
+* **Description =** Current bf name
 * **Static**
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** 'bf-dead'
 
 ## deathSoundName
-* **Description =** putdeschere
+* **Description =** Current death sound name
 * **Static**
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** 'fnf_loss_sfx'
 
 ## loopSoundName
-* **Description =** putdeschere
+* **Description =** Current loop sound name
 * **Static**
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** 'gameOver'
 
 ## endSoundName
-* **Description =** putdeschere
+* **Description =** Current end sound name
 * **Static**
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** 'gameOverEnd'
 
 ## instance
-* **Description =** putdeschere
+* **Description =** Instance for current state
 * **Static**
 * **Type =** [GameOverSubstate](https://api.haxeflixel.com/GameOverSubstate.html)
 

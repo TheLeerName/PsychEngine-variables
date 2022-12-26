@@ -1,69 +1,69 @@
 ## weeksLoaded
-* **Description =** putdeschere
+* **Description =** Map of loaded weeks: weekName:String => week:WeekData
 * **Static**
 * **Type =** [Map<String, WeekData>](https://api.haxeflixel.com/Map.html)
 * **Default value =** new Map<String, WeekData>()
 
 ## weeksList
-* **Description =** putdeschere
+* **Description =** Array of weeks list
 * **Static**
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
 ## folder
-* **Description =** putdeschere
+* **Description =** Folder of week
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ''
 
 ## songs
-* **Description =** putdeschere
+* **Description =** songs of week
 * **Type =** [Array<Dynamic>](https://api.haxeflixel.com/Array.html)
 
 ## weekCharacters
-* **Description =** putdeschere
+* **Description =** Characters of week
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 
 ## weekBackground
-* **Description =** putdeschere
+* **Description =** Background of week
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 
 ## weekBefore
-* **Description =** putdeschere
+* **Description =** Week to replace
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 
 ## storyName
-* **Description =** putdeschere
+* **Description =** Description of story
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 
 ## weekName
-* **Description =** putdeschere
+* **Description =** Name of week
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 
 ## freeplayColor
-* **Description =** putdeschere
+* **Description =** Color of bg in freeplay
 * **Type =** [Array<Int>](https://api.haxeflixel.com/Array.html)
 
 ## startUnlocked
-* **Description =** putdeschere
+* **Description =** Is week unlocked on start?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 
 ## hiddenUntilUnlocked
-* **Description =** putdeschere
+* **Description =** Is week hidden until unlocked?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 
 ## hideStoryMode
-* **Description =** putdeschere
+* **Description =** Is week hidden in story mode?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 
 ## hideFreeplay
-* **Description =** putdeschere
+* **Description =** Is week hidden in freeplay?
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 
 ## difficulties
-* **Description =** putdeschere
+* **Description =** Difficulties of week
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 
 ## fileName
-* **Description =** putdeschere
+* **Description =** File name of week
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 
