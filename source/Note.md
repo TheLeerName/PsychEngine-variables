@@ -5,7 +5,7 @@
 
 ## strumTime
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## mustPress
@@ -15,7 +15,7 @@
 
 ## noteData
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## canBeHit
@@ -77,7 +77,7 @@
 
 ## sustainLength
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## isSustainNote
@@ -97,7 +97,7 @@
 
 ## eventLength
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## eventVal1
@@ -136,7 +136,7 @@
 
 ## lateHitMult
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## lowPriority
@@ -172,42 +172,42 @@
 
 ## noteSplashHue
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## noteSplashSat
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## noteSplashBrt
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## offsetX
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## offsetY
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## offsetAngle
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## multAlpha
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## multSpeed
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## copyX
@@ -247,7 +247,7 @@
 
 ## ratingMod
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## ratingDisabled
@@ -287,12 +287,12 @@
 
 ## lastNoteScaleToo
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## originalHeightForCalcs
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 6
 
 ## skin

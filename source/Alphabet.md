@@ -19,7 +19,7 @@
 
 ## targetY
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## changeX
@@ -39,17 +39,17 @@
 
 ## scaleX
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## scaleY
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## rows
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## distancePerItem
@@ -79,7 +79,7 @@
 
 ## xPos
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## rowData
@@ -99,6 +99,6 @@
 
 ## off
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 

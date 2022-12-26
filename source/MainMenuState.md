@@ -7,7 +7,7 @@
 ## curSelected
 * **Description =** putdeschere
 * **Static**
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## menuItems
@@ -55,7 +55,7 @@
 
 ## scale
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## menuItem
@@ -85,6 +85,6 @@
 
 ## add
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 

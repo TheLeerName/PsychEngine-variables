@@ -29,7 +29,7 @@
 
 ## speed
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## stage
@@ -53,7 +53,7 @@
 
 ## i
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## notes

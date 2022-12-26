@@ -1,3 +1,9 @@
+## forceNextDirectory
+* **Description =** putdeschere
+* **Static**
+* **Type =** [String](https://api.haxeflixel.com/String.html)
+* **Default value =** null
+
 ## path
 * **Description =** putdeschere
 * **Type =** [String](https://api.haxeflixel.com/String.html)

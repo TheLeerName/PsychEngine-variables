@@ -5,7 +5,7 @@
 
 ## curSelected
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## optionsArray
@@ -77,12 +77,12 @@
 
 ## holdTime
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## holdValue
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## val
@@ -97,6 +97,6 @@
 
 ## bullShit
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 

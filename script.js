@@ -13,7 +13,8 @@ fs.readdirSync("sourceFiles").forEach(file => {
 	for (let i = 0; i < srcFile.length; i++)
 		if (srcFile[i].startsWith("class " + className))
 		{
-			srcFile = srcFile.slice(i + 2)
+			//console.log(srcFile[i])
+			srcFile = srcFile.slice(i + 1 + (srcFile[i].includes("{") ? 0 : 1), srcFile.length)
 			break
 		}
 	for (let i = 0; i < srcFile.length; i++)
@@ -53,7 +54,6 @@ fs.readdirSync("sourceFiles").forEach(file => {
 			if (srcFile[i].startsWith(thing))
 				d.push(srcFile[i]);
 	srcFile = d;
-	//console.log(srcFile)
 
 	var varsCool = getVariables(srcFile, varsToFormat, importsFile);
 	if (varsCool.length > 0)
@@ -105,7 +105,7 @@ function getVariables(srcFile, variables, importsFile)
 						varTypeURL = thing.replaceAll(".", "/");
 
 				var varValue = srcFile[i].substring(variable.length + varName.length + varType.length + 5, srcFile[i].length);
-				if (varValue.length == 1)
+				if (varValue == " ")
 					varType = ""
 				//console.log(varName, varType);
 

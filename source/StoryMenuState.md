@@ -16,7 +16,7 @@
 
 ## curDifficulty
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 1
 
 ## txtWeekTitle
@@ -30,7 +30,7 @@
 ## curWeek
 * **Description =** putdeschere
 * **Static**
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## txtTracklist
@@ -92,7 +92,7 @@
 
 ## num
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## isLocked
@@ -152,7 +152,7 @@
 
 ## intendedScore
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## leWeek
@@ -167,7 +167,7 @@
 
 ## bullShit
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## unlocked

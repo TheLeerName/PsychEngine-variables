@@ -1,13 +1,19 @@
+## Function_Stop
+* **Description =** putdeschere
+* **Static**
+* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
+* **Default value =** 1
+
 ## Function_Continue
 * **Description =** putdeschere
 * **Static**
-* **Type =** [](https://api.haxeflixel.com/Dynamic.html)
+* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
 * **Default value =** 0
 
 ## Function_StopLua
 * **Description =** putdeschere
 * **Static**
-* **Type =** [](https://api.haxeflixel.com/Dynamic.html)
+* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
 * **Default value =** 2
 
 ## lua

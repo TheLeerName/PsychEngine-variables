@@ -1,3 +1,9 @@
+## downScroll
+* **Description =** putdeschere
+* **Static**
+* **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
+* **Default value =** false
+
 ## middleScroll
 * **Description =** putdeschere
 * **Static**
@@ -79,7 +85,7 @@
 ## noteOffset
 * **Description =** putdeschere
 * **Static**
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## arrowHSV
@@ -115,7 +121,7 @@
 ## healthBarAlpha
 * **Description =** putdeschere
 * **Static**
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## controllerMode
@@ -127,7 +133,7 @@
 ## hitsoundVolume
 * **Description =** putdeschere
 * **Static**
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## pauseMusic
@@ -162,7 +168,7 @@
 ## ratingOffset
 * **Description =** putdeschere
 * **Static**
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## sickWindow
@@ -213,7 +219,7 @@
 
 ## i
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Int.html)
+* **Type =** [Int](https://api.haxeflixel.com/Int.html)
 * **Default value =** 0
 
 ## len

@@ -1,3 +1,9 @@
+## weeksLoaded
+* **Description =** putdeschere
+* **Static**
+* **Type =** [Map<String, WeekData>](https://api.haxeflixel.com/Map.html)
+* **Default value =** new Map<String, WeekData>()
+
 ## weeksList
 * **Description =** putdeschere
 * **Static**

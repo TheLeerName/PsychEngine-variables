@@ -1,3 +1,8 @@
+## EMPTY_STRING
+* **Description =** putdeschere
+* **Static**
+* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
+
 ## PLAYING 
 * **Description =** putdeschere
 * **Static**
@@ -58,12 +63,12 @@
 
 ## v1 
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/ Int.html)
+* **Type =** [ Int](https://api.haxeflixel.com/ Int.html)
 * **Default value =** 0
 
 ## v2 
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/ Int.html)
+* **Type =** [ Int](https://api.haxeflixel.com/ Int.html)
 * **Default value =** 0
 
 ## v0p 

@@ -23,12 +23,12 @@
 
 ## holdTimer
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## heyTimer
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 0
 
 ## specialAnim
@@ -48,7 +48,7 @@
 
 ## singDuration
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 4
 
 ## idleSuffix
@@ -98,7 +98,7 @@
 
 ## jsonScale
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Float.html)
+* **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
 ## noAntialiasing
@@ -144,7 +144,7 @@
 
 ## spriteType
 * **Description =** putdeschere
-* **Type =** [](https://api.haxeflixel.com/Dynamic.html)
+* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
 * **Default value =** "
 
 ## modTxtToFind
