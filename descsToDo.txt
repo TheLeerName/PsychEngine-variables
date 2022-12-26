@@ -1,0 +1,955 @@
+[Achievements]
+achievementsStuff -=- Array for data of achievements: [Name:String, Description:String, AchievementSaveTag:String, isHidden:Bool]
+achievementsMap -=- Map for save of achievements: Name:String => isUnlocked:Bool
+henchmenDeath -=- Uses as count of henchmen deaths in MILF song for achievement Roadkill Enthusiast
+
+[AchievementsMenuState]
+options -=- Achievements names for menu
+grpOptions -=- Alphabet group for menu items
+curSelected -=- Current selected menu item
+achievementArray -=- Image group of achievements for menu items
+achievementIndex -=- Index of achievement
+descText -=- Text object for description of achievement
+
+[Alphabet]
+text -=- String for text of alphabet object
+bold -=- Is text bold?
+letters -=- Array of character objects
+isMenuItem -=- Is text is menu item?
+targetY -=- Y coordinate for repositioning, uses when isMenuItem = true
+changeX -=- Change X on repositioning? Uses when isMenuItem = true
+changeY -=- Change Y on repositioning? Uses when isMenuItem = true
+alignment -=- Alignment of text (LEFT, CENTERED, RIGHT)
+scaleX -=- Scale X
+scaleY -=- Scale Y
+rows -=- Value for repositioning letters by Y
+distancePerItem -=- Distance per item
+startPosition -=- Start position
+
+[AttachedSprite]
+sprTracker -=- AttachedSprite object will be attach to this FlxSprite object
+xAdd -=- X offset
+yAdd -=- Y offset
+angleAdd -=- Angle offset
+alphaMult -=- Multiplicator for alpha
+copyAngle -=- Will AttachedSprite object copy angle of sprTracker?
+copyAlpha -=- Will AttachedSprite object copy alpha of sprTracker?
+copyVisible -=- Will AttachedSprite object copy visible of sprTracker?
+
+[AttachedText]
+offsetX -=- X offset
+offsetY -=- Y offset
+sprTracker -=- AttachedText object will be attach to this FlxSprite object
+copyVisible -=- Will AttachedSprite object copy visible of sprTracker?
+copyAlpha -=- Will AttachedSprite object copy alpha of sprTracker?
+
+[Boyfriend]
+startedDeath -=- Used for death animation
+
+[Character]
+animOffsets -=- Map for animations offsets: animation:String => offsets:Array<Dynamic>
+debugMode -=- Used to block dance animations
+isPlayer -=- Is character on bf side?
+curCharacter -=- Character name
+colorTween -=- Not used tween, disables when substate is opened
+holdTimer -=- Timer for sing animation, uses singDuration variable. Uses when character on opponent side
+heyTimer -=- Timer for hey animation, uses playbackRate variable.
+specialAnim -=- If true, current animation will not be overlapped by idle animation
+animationNotes -=- Uses for pico-speaker character
+stunned -=- If true, stops bf idle animation, key presses will not work, and when you press a key when there was no notes to press for this key notes will not be count as miss (like in ghost tapping)
+singDuration -=- Multiplier of how long a character holds the sing pose
+idleSuffix -=- Suffix for idle animations
+danceIdle -=- Character use "danceLeft" and "danceRight" instead of "idle"
+skipDance -=- Uses for pico-speaker character
+healthIcon -=- Health icon name
+animationsArray -=- Array for animations
+positionArray -=- Array for positions
+cameraPosition -=- Array for positions of camera
+hasMissAnimations -=- Is character has miss animations?
+imageFile -=- Used on Character Editor
+jsonScale -=- Used on Character Editor
+noAntialiasing -=- Used on Character Editor
+originalFlipX -=- Used on Character Editor
+healthColorArray -=- Used on Character Editor
+DEFAULT_CHARACTER -=- In case a character is missing, it will use BF on its place
+
+[CheckboxThingie]
+sprTracker -=- CheckboxThingie object will be attach to this FlxSprite object
+daValue -=- Value of checkbox
+copyAlpha -=- Will CheckboxThingie object copy angle of sprTracker?
+offsetX -=- X offset
+offsetY -=- Y offset
+
+[ClientPrefs]
+downScroll -=- If true, notes go Down instead of Up, simple enough.
+middleScroll -=- If true, your notes get centered.
+opponentStrums -=- If false, opponent notes get hidden.
+showFPS -=- If false, hides FPS Counter.
+flashing -=- Enter false if you're sensitive to flashing lights!
+globalAntialiasing -=- If false, disables anti-aliasing, increases performance\nat the cost of sharper visuals.
+noteSplashes -=- If false, hitting "Sick!" notes won't show particles.
+lowQuality -=- If true, disables some background details, decreases loading times and improves performance.
+shaders -=- If false, disables shaders. It's used for some visual effects, and also CPU intensive for weaker PCs.
+framerate -=- Pretty self explanatory, isn't it?
+cursing -=- Not used variable
+violence -=- Not used variable
+camZooms -=- If false, the camera won't zoom in on a beat hit.
+hideHud -=- If true, hides most HUD elements.
+noteOffset -=- Note offset in milliseconds
+arrowHSV -=- Array of HSV of notes
+ghostTapping -=- If true, you won't get misses from pressing keys\nwhile there are no notes able to be hit.
+timeBarType -=- What should the Time Bar display?
+scoreZoom -=- If false, disables the Score text zooming\neverytime you hit a note.
+noReset -=- If true, pressing Reset won't do anything.
+healthBarAlpha -=- How much transparent should the health bar and icons be.
+controllerMode -=- Enter true if you want to play with a controller instead of using your Keyboard.
+hitsoundVolume -=- Funny notes does "Tick!" when you hit them.
+pauseMusic -=- What song do you prefer for the Pause Screen?
+checkForUpdates -=- On Release builds, turn this on to check for updates when you start the game.
+comboStacking -=- If false, Ratings and Combo won't stack, saving on System Memory and making them easier to read
+gameplaySettings -=- Map for gameplay settings in freeplay
+comboOffset -=- Array for combo offsets
+ratingOffset -=- Changes how late/early you have to hit for a "Sick!" Higher values mean you have to hit later.
+sickWindow -=- Changes the amount of time you have for hitting a "Sick!" in milliseconds.
+goodWindow -=- Changes the amount of time you have for hitting a "Good" in milliseconds.
+badWindow -=- Changes the amount of time you have for hitting a "Bad" in milliseconds.
+safeFrames -=- Changes how many frames you have for hitting a note earlier or late.
+keyBinds -=- Map of keybinds: name_keybind:String => array_keys:Array<FlxKey>
+defaultKeys -=- Map of defaultkeybinds: name_keybind:String => array_keys:Array<FlxKey>
+
+[Conductor]
+bpm -=- Current BPM of song
+crochet -=- curBeat in milliseconds
+stepCrochet -=- curStep in milliseconds
+songPosition -=- Current position of song
+lastSongPos -=- Used for fix of missed frames
+offset -=- Song offset in milliseconds
+safeZoneOffset -=- safeFrames in milliseconds
+bpmChangeMap -=- Array of BPM changes
+
+[CoolUtil]
+defaultDifficulties -=- Array of default difficulties
+defaultDifficulty -=- The chart that has no suffix and starting difficulty on Freeplay/Story Mode
+difficulties -=- Array with difficulties of current song
+
+[CreditsState]
+curSelected -=- Current selected menu item
+grpOptions -=- Alphabet object group for menu item
+iconArray -=- Array of icons for menu item
+creditsStuff -=- Array with credits: [Name:String, icon_name:String, Description:String, Link:String, BG_Color:String]
+bg -=- BG object
+descText -=- Text object for descriptions
+intendedColor -=- Current color of bg
+colorTween -=- Uses when menu item switches
+descBox -=- Black thing for descriptions
+offsetThing -=- X offset for description
+
+[DialogueBox]
+box -=- dialogue box
+curCharacter -=- Current character in dialogue
+dialogueList -=- Array with dialogue texts
+swagDialogue -=- Text object of dialogue
+dropText -=- Text object of dialogue
+finishThing -=- Executes when dialogue finished
+nextDialogueThing -=- Executes when next dialogue switches
+skipDialogueThing -=- Executes when dialogue skipped
+portraitLeft -=- Image object of left portrait
+portraitRight -=- Image object of right portrait
+handSelect -=- Image object of hand
+bgFade -=- Image object of bg
+
+[DialogueBoxPsych]
+dialogue -=- Text object of dialogue
+dialogueList -=- Array with dialogue texts
+finishThing -=- Executes when dialogue finished
+nextDialogueThing -=- Executes when next dialogue switches
+skipDialogueThing -=- Executes when dialogue skipped
+bgFade -=- Image object of bg
+box -=- dialogue box
+textToType -=- Not used variable
+arrayCharacters -=- Array with dialogue characters
+currentText -=- Index of current dialogue
+offsetPos -=- X offset of dialogue character
+textBoxTypes -=- Array with dialogue box types
+curCharacter -=- Current character in dialogue
+dialogueStarted -=- Dialogue started?
+dialogueEnded -=- Dialogue ended?
+LEFT_CHAR_X -=- X of dialogue left character
+RIGHT_CHAR_X -=- X of dialogue right character
+DEFAULT_CHAR_Y -=- Y of dialogue characters
+DEFAULT_TEXT_X -=- X of dialogue text
+DEFAULT_TEXT_Y -=- Y of dialogue text
+LONG_TEXT_ADD -=- Y offset of dialogue text
+scrollSpeed -=- Scroll speed of dialogue
+daText -=- text object of dialogue
+ignoreThisFrame -=- First frame is reserved for loading dialogue images
+closeSound -=- Sound of close dialogue
+closeVolume -=- Volume of sound of close dialogue
+
+[FreeplayState]
+songs -=- Array of songs datas
+selector -=- Not used variable
+curSelected -=- Current selected menu item
+curDifficulty -=- Current selected difficulty menu item
+lastDifficultyName -=- Previous selected difficulty name
+scoreBG -=- Image object of score text
+scoreText -=- Text object of score text
+diffText -=- Text object of difficulty in score text
+lerpScore -=- Current lerping score
+lerpRating -=- Current lerping rating
+intendedScore -=- Current score
+intendedRating -=- Current rating
+grpSongs -=- Alphabet object group of songs
+curPlaying -=- Not used variable
+iconArray -=- Array of health icons
+bg -=- Image object of bg
+intendedColor -=- Current color of bg
+colorTween -=- Color tween of bg
+instPlaying -=- Index of instrumental of current selected song
+vocals -=- Current playing instrumental
+holdTime -=- Timer for hold key
+
+[FunkinLua]
+Function_Stop -=- Uses in "return Function_Stop;" to stop run lua function
+Function_Continue -=- Uses in "return Function_Continue;" to continue run lua function
+Function_StopLua -=- Uses in "return Function_Continue;" to stop run lua code in function
+lua -=- Current lua state
+camTarget -=- Not used variable
+scriptName -=- Name of current script
+closed -=- Is script closed?
+hscript -=- HScript class
+
+[GameOverSubstate]
+boyfriend -=- Boyfriend object for bf
+camFollow -=- Uses for camera follow
+camFollowPos -=- Uses for camera follow
+updateCamera -=- Uses for camera follow
+playingDeathSound -=- Uses for playing death sound
+stageSuffix -=- Not used variable
+characterName -=- Current bf name
+deathSoundName -=- Current death sound name
+loopSoundName -=- Current loop sound name
+endSoundName -=- Current end sound name
+instance -=- Instance for current state
+
+[GameplayChangersSubstate]
+curOption -=- Current selected option
+curSelected -=- Index of current selected option
+optionsArray -=- Array of options
+grpOptions -=- Alphabet object group of menu items
+checkboxGroup -=- CheckboxThingie object group of menu items
+grpTexts -=- AttachedText object group of menu items
+
+[HealthIcon]
+sprTracker -=- HealthIcon object will be attach to this FlxSprite object
+isOldIcon -=- If true, uses bf old icon
+isPlayer -=- Is character on bf side?
+char -=- Current character name
+
+[Highscore]
+weekScores -=- Map of week scores: weekName:String => score:Int
+songScores -=- Map of song scores: songName:String => score:Int
+songRating -=- Map of song ratings: songName:String => rating:Float
+
+[Main]
+gameWidth -=- Width of the game in pixels
+gameHeight -=- Height of the game in pixels
+initialState -=- The FlxState the game starts with
+zoom -=- If -1, zoom is automatically calculated to fit the window dimensions
+framerate -=- How many frames per second the game should run at
+skipSplash -=- Whether to skip the flixel splash screen that appears in release mode
+startFullscreen -=- Whether to start the game in fullscreen on desktop targets
+fpsVar -=- FPS object for fps counter
+
+[MainMenuState]
+psychEngineVersion -=- Psych Engine current version
+curSelected -=- Index of current menu item
+menuItems -=- Image object group for menu items
+camGame -=- Camera for objects, except achievements
+camAchievement -=- Camera for achievements
+optionShit -=- Array of menu item names
+magenta -=- Image object of magenta bg
+camFollow -=- Used for camera follow
+camFollowPos -=- Used for camera follow
+debugKeys -=- Array of keys for open MasterEditorMenu
+
+[MenuCharacter]
+character -=- Current character name
+hasConfirmAnimation -=- Is character has confirm animation?
+DEFAULT_CHARACTER -=- Used for avoid crash when character not found
+
+[MenuItem]
+targetY -=- Y coordinate for repositioning
+flashingInt -=- Used for calculate flashing, when isFlashing = true
+isFlashing -=- Used for calculate flashing
+
+[ModsMenuState]
+mods -=- Array of mods data
+bg -=- Image object of bg
+intendedColor -=- Current color of bg
+colorTween -=- Color tween of bg
+noModsTxt -=- Text object of text when mods not found
+selector -=- Image object of selector
+descriptionTxt -=- Text object of description
+needaReset -=- If true, while leaving this menu game restarts
+curSelected -=- Index of current menu item
+defaultColor -=- Default color of bg
+buttonDown -=- Button object of button down
+buttonTop -=- Button object of button top
+buttonDisableAll -=- Button object of button disable all
+buttonEnableAll -=- Button object of button enable all
+buttonUp -=- Button object of button up
+buttonToggle -=- Button object of button toggle
+buttonsArray -=- Array of button objects
+installButton -=- Not used variable
+removeButton -=- Not used variable
+modsList -=- Array of mods data
+visibleWhenNoMods -=- Array of objects which visible when mods found
+visibleWhenHasMods -=- Array of objects which visible when mods not found
+
+[MusicBeatState]
+curSection -=- Current section
+stepsToDo -=- Used for calculate curStep
+curStep -=- Current step
+curBeat -=- Current beat
+curDecStep -=- Current decimal step
+curDecBeat -=- Current decimal beat
+controls -=- Controls for input
+camBeat -=- Not used variable
+
+[MusicBeatSubstate]
+lastStep -=- Last step
+curStep -=- Current step
+curBeat -=- Current beat
+curDecStep -=- Current decimal step
+curDecBeat -=- Current decimal beat
+controls -=- Controls for input
+
+[Note]
+extraData -=- Not used variable
+strumTime -=- Strum time of current note in milliseconds
+mustPress -=- If true, note will be count on bf side
+noteData -=- 0 = Left note, 1 = Down note, 2 = Up note, 3 = Right note
+canBeHit -=- Is note can be hit?
+tooLate -=- Is note missed?
+wasGoodHit -=- Is note pressed?
+ignoreNote -=- If true, note ignores by opponent, and miss this note not counts as miss
+hitByOpponent -=- Is note pressed by opponent?
+noteWasHit -=- Not used variable
+prevNote -=- Previous note, used for sustains
+nextNote -=- Next note, used for sustains
+spawned -=- Is note spawned?
+tail -=- Array of sustains
+parent -=- Not used variable
+blockHit -=- If true, player cant hit this note
+sustainLength -=- Length of sustain note
+isSustainNote -=- Is note sustain?
+noteType -=- Name of note type
+eventName -=- Name of event, uses for event note
+eventLength -=- Length of event, uses for event note
+eventVal1 -=- 1 value of event, uses for event note
+eventVal2 -=- 2 value of event, uses for event note
+colorSwap -=- Shader for color swap note
+inEditor -=- Is note in charting menu?
+animSuffix -=- Suffix of animation note, uses when note type is "Alt Animation"
+gfNote -=- Is note will be pressed by gf? Uses when note type is "GF Sing"
+earlyHitMult -=- Multiplicator for early hit note
+lateHitMult -=- Multiplicator for late hit note
+lowPriority -=- Uses when note type is "Hurt Note"
+swagWidth -=- Width of note
+colArray -=- Array with strum note names
+pixelInt -=- Array with strum note indexes
+noteSplashDisabled -=- Is note hasnt splash?
+noteSplashTexture -=- Name of note splash texture
+noteSplashHue -=- Hue of note splash texture
+noteSplashSat -=- Saturation of note splash texture
+noteSplashBrt -=- Brightness of note splash texture
+offsetX -=- X offset of note
+offsetY -=- Y offset of note
+offsetAngle -=- Angle offset of note
+multAlpha -=- Multiplicator for alpha of note
+multSpeed -=- Multiplicator for scroll speed of note
+copyX -=- Is note calculates X? Can be used for custom positioning of note
+copyY -=- Is note calculates Y? Can be used for custom positioning of note
+copyAngle -=- Is note calculates angle? Can be used for custom positioning of note
+copyAlpha -=- Is note calculates alpha? Can be used for custom editing alpha of note
+hitHealth -=- Value of heal on hit note
+missHealth -=- Value of hurt on miss note
+rating -=- Rating name of note
+ratingMod -=- 9 = unknown, 0.25 = shit, 0.5 = bad, 0.75 = good, 1 = sick
+ratingDisabled -=- Is rating disabled on this note?
+texture -=- Name of current file name of notes
+noAnimation -=- Is note hasnt animation?
+noMissAnimation -=- Is note hasnt miss animation?
+hitCausesMiss -=- If true, pressing note counts as miss
+distance -=- Unfinished variable, distance of note
+hitsoundDisabled -=- Is hitsound disabled of pressing this note?
+
+[NoteSplash]
+colorSwap -=- Shader for color swap note splash
+idleAnim -=- Animation name of idle note splash
+textureLoaded -=- Not used variable
+
+[PauseSubState]
+grpMenuShit -=- Alphabet group
+menuItems -=- 
+menuItemsOG -=- 
+difficultyChoices -=- 
+curSelected -=- 
+pauseMusic -=- 
+practiceText -=- 
+skipTimeText -=- 
+skipTimeTracker -=- 
+curTime -=- 
+songName -=- 
+num -=- 
+bg -=- 
+levelInfo -=- 
+levelDifficulty -=- 
+blueballedTxt -=- 
+chartingText -=- 
+cantUnpause -=- 
+upP -=- 
+downP -=- 
+accepted -=- 
+poop -=- 
+bullShit -=- 
+
+[PlayState]
+STRUM_X -=- 
+STRUM_X_MIDDLESCROLL -=- 
+ratingStuff -=- 
+isCameraOnForcedPos -=- 
+boyfriendMap -=- 
+dadMap -=- 
+gfMap -=- 
+variables -=- 
+modchartTweens -=- 
+modchartSprites -=- 
+modchartTimers -=- 
+modchartSounds -=- 
+modchartTexts -=- 
+modchartSaves -=- 
+boyfriendMap -=- 
+dadMap -=- 
+gfMap -=- 
+variables -=- 
+modchartTweens -=- 
+modchartSprites -=- 
+modchartTimers -=- 
+modchartSounds -=- 
+modchartTexts -=- 
+modchartSaves -=- 
+BF_X -=- 
+BF_Y -=- 
+DAD_X -=- 
+DAD_Y -=- 
+GF_X -=- 
+GF_Y -=- 
+songSpeedTween -=- 
+songSpeed -=- 
+songSpeedType -=- 
+noteKillOffset -=- 
+playbackRate -=- 
+boyfriendGroup -=- 
+dadGroup -=- 
+gfGroup -=- 
+curStage -=- 
+isPixelStage -=- 
+SONG -=- 
+isStoryMode -=- 
+storyWeek -=- 
+storyPlaylist -=- 
+storyDifficulty -=- 
+spawnTime -=- 
+vocals -=- 
+dad -=- 
+gf -=- 
+boyfriend -=- 
+notes -=- 
+unspawnNotes -=- 
+eventNotes -=- 
+strumLine -=- 
+camFollow -=- 
+camFollowPos -=- 
+prevCamFollow -=- 
+prevCamFollowPos -=- 
+strumLineNotes -=- 
+opponentStrums -=- 
+playerStrums -=- 
+grpNoteSplashes -=- 
+camZooming -=- 
+camZoomingMult -=- 
+camZoomingDecay -=- 
+curSong -=- 
+gfSpeed -=- 
+health -=- 
+combo -=- 
+healthBarBG -=- 
+healthBar -=- 
+songPercent -=- 
+timeBarBG -=- 
+timeBar -=- 
+ratingsData -=- 
+sicks -=- 
+goods -=- 
+bads -=- 
+shits -=- 
+generatedMusic -=- 
+endingSong -=- 
+startingSong -=- 
+updateTime -=- 
+changedDifficulty -=- 
+chartingMode -=- 
+healthGain -=- 
+healthLoss -=- 
+instakillOnMiss -=- 
+cpuControlled -=- 
+practiceMode -=- 
+botplaySine -=- 
+botplayTxt -=- 
+iconP1 -=- 
+iconP2 -=- 
+camHUD -=- 
+camGame -=- 
+camOther -=- 
+cameraSpeed -=- 
+dialogue -=- 
+dialogueJson -=- 
+dadbattleBlack -=- 
+dadbattleLight -=- 
+dadbattleSmokes -=- 
+halloweenBG -=- 
+halloweenWhite -=- 
+phillyLightsColors -=- 
+phillyWindow -=- 
+phillyStreet -=- 
+phillyTrain -=- 
+blammedLightsBlack -=- 
+phillyWindowEvent -=- 
+trainSound -=- 
+phillyGlowGradient -=- 
+phillyGlowParticles -=- 
+limoKillingState -=- 
+limo -=- 
+limoMetalPole -=- 
+limoLight -=- 
+limoCorpse -=- 
+limoCorpseTwo -=- 
+bgLimo -=- 
+grpLimoParticles -=- 
+grpLimoDancers -=- 
+fastCar -=- 
+upperBoppers -=- 
+bottomBoppers -=- 
+santa -=- 
+heyTimer -=- 
+bgGirls -=- 
+wiggleShit -=- 
+bgGhouls -=- 
+tankWatchtower -=- 
+tankGround -=- 
+tankmanRun -=- 
+foregroundSprites -=- 
+songScore -=- 
+songHits -=- 
+songMisses -=- 
+scoreTxt -=- 
+timeTxt -=- 
+scoreTxtTween -=- 
+campaignScore -=- 
+campaignMisses -=- 
+seenCutscene -=- 
+deathCounter -=- 
+defaultCamZoom -=- 
+daPixelZoom -=- 
+singAnimations -=- 
+inCutscene -=- 
+skipCountdown -=- 
+songLength -=- 
+boyfriendCameraOffset -=- 
+opponentCameraOffset -=- 
+girlfriendCameraOffset -=- 
+storyDifficultyText -=- 
+detailsText -=- 
+detailsPausedText -=- 
+keysPressed -=- 
+boyfriendIdleTime -=- 
+boyfriendIdled -=- 
+instance -=- 
+luaArray -=- 
+luaDebugGroup -=- 
+introSoundsSuffix -=- 
+debugKeysChart -=- 
+debugKeysCharacter -=- 
+keysArray -=- 
+controlArray -=- 
+precacheList -=- 
+lastRating -=- 
+lastCombo -=- 
+lastScore -=- 
+rating -=- 
+rating -=- 
+rating -=- 
+songName -=- 
+stageData -=- 
+stageFront -=- 
+stageLight -=- 
+stageCurtains -=- 
+particle -=- 
+bgEscalator -=- 
+fgSnow -=- 
+evilTree -=- 
+evilSnow -=- 
+bgSky -=- 
+repositionShit -=- 
+bgSchool -=- 
+bgStreet -=- 
+widShit -=- 
+waveEffectFG -=- 
+posY -=- 
+mountains -=- 
+buildings -=- 
+smokeRight -=- 
+ground -=- 
+filesPushed -=- 
+foldersToCheck -=- 
+luaFile -=- 
+gfVersion -=- 
+camPos -=- 
+showTime -=- 
+filesPushed -=- 
+foldersToCheck -=- 
+vert -=- 
+found -=- 
+luaFile -=- 
+filepath -=- 
+psychDialogue -=- 
+black -=- 
+red -=- 
+senpaiEvil -=- 
+songName -=- 
+songName -=- 
+tankman -=- 
+tankman2 -=- 
+gfDance -=- 
+gfCutscene -=- 
+picoCutscene -=- 
+boyfriendCutscene -=- 
+wellWellWell -=- 
+tightBars -=- 
+cutsceneSnd -=- 
+calledTimes -=- 
+zoomBack -=- 
+camPosY -=- 
+finishTimer -=- 
+countdownReady -=- 
+countdownSet -=- 
+countdownGo -=- 
+startOnTime -=- 
+introAlts -=- 
+ret -=- 
+swagCounter -=- 
+introAlts -=- 
+antialias -=- 
+lastReportedPlayheadPosition -=- 
+songTime -=- 
+noteTypeMap -=- 
+eventPushedMap -=- 
+noteData -=- 
+playerCounter -=- 
+daBeats -=- 
+songName -=- 
+file -=- 
+subEvent -=- 
+daNoteData -=- 
+gottaHitNote -=- 
+swagNote -=- 
+susLength -=- 
+floorSus -=- 
+sustainNote -=- 
+subEvent -=- 
+offsetX -=- 
+smoke -=- 
+smoke -=- 
+chars -=- 
+chars -=- 
+canReset -=- 
+startedCountdown -=- 
+canPause -=- 
+limoSpeed -=- 
+dancers -=- 
+diffStr -=- 
+particle -=- 
+particle -=- 
+particle -=- 
+particle -=- 
+mult -=- 
+iconOffset -=- 
+songCalc -=- 
+secondsTotal -=- 
+index -=- 
+strumX -=- 
+strumY -=- 
+strumAngle -=- 
+strumDirection -=- 
+strumAlpha -=- 
+strumScroll -=- 
+value2 -=- 
+doFlash -=- 
+chars -=- 
+color -=- 
+width -=- 
+color -=- 
+hudZoom -=- 
+val2 -=- 
+targetsArray -=- 
+duration -=- 
+intensity -=- 
+lastAlpha -=- 
+val1 -=- 
+val2 -=- 
+newValue -=- 
+winterHorrorlandNext -=- 
+totalNotesHit -=- 
+showCombo -=- 
+showComboNum -=- 
+showRating -=- 
+pixelShitPart2 -=- 
+placement -=- 
+coolText -=- 
+rating -=- 
+score -=- 
+daRating -=- 
+pixelShitPart2 -=- 
+comboSpr -=- 
+seperatedScore -=- 
+daLoop -=- 
+xThing -=- 
+key -=- 
+canMiss -=- 
+pressNotes -=- 
+notesStopped -=- 
+sortedNotesList -=- 
+key -=- 
+char -=- 
+animToPlay -=- 
+time -=- 
+isSus -=- 
+leData -=- 
+leType -=- 
+hue -=- 
+sat -=- 
+brt -=- 
+trainFrameTiming -=- 
+trainCars -=- 
+trainFinishing -=- 
+trainCooldown -=- 
+achieve -=- 
+tankSpeed -=- 
+tankAngle -=- 
+lightningOffset -=- 
+lastBeatHit -=- 
+ret -=- 
+bool -=- 
+ratingPercent -=- 
+ratingFC -=- 
+ret -=- 
+usedPractice -=- 
+curLightEvent -=- 
+
+[Prompt]
+selected -=- 
+okc -=- 
+cancelc -=- 
+buttons -=- 
+theText -=- 
+goAnyway -=- 
+UI_box -=- 
+panel -=- 
+panelbg -=- 
+buttonAccept -=- 
+buttonNo -=- 
+cornerSize -=- 
+op1 -=- 
+op2 -=- 
+textshit -=- 
+antiY -=- 
+
+[ResetScoreSubState]
+bg -=- 
+alphabetArray -=- 
+icon -=- 
+onYes -=- 
+yesText -=- 
+noText -=- 
+song -=- 
+difficulty -=- 
+week -=- 
+name -=- 
+tooLong -=- 
+text -=- 
+text -=- 
+alphas -=- 
+confirmInt -=- 
+
+[Song]
+song -=- 
+notes -=- 
+events -=- 
+bpm -=- 
+needsVoices -=- 
+arrowSkin -=- 
+splashSkin -=- 
+speed -=- 
+stage -=- 
+player1 -=- 
+player2 -=- 
+gfVersion -=- 
+i -=- 
+notes -=- 
+len -=- 
+formattedFolder -=- 
+formattedSong -=- 
+moddyFile -=- 
+
+[StageData]
+forceNextDirectory -=- 
+path -=- 
+modPath -=- 
+
+[StoryMenuState]
+weekCompleted -=- 
+scoreText -=- 
+lastDifficultyName -=- 
+curDifficulty -=- 
+txtWeekTitle -=- 
+bgSprite -=- 
+curWeek -=- 
+txtTracklist -=- 
+grpWeekText -=- 
+grpWeekCharacters -=- 
+grpLocks -=- 
+difficultySelectors -=- 
+sprDifficulty -=- 
+leftArrow -=- 
+rightArrow -=- 
+loadedWeeks -=- 
+rankText -=- 
+ui_tex -=- 
+bgYellow -=- 
+blackBarThingie -=- 
+num -=- 
+isLocked -=- 
+weekThing -=- 
+charArray -=- 
+tracksSprite -=- 
+downP -=- 
+selectedWeek -=- 
+stopspamming -=- 
+leWeek -=- 
+diffic -=- 
+diff -=- 
+newImage -=- 
+intendedScore -=- 
+leWeek -=- 
+leName -=- 
+bullShit -=- 
+unlocked -=- 
+assetName -=- 
+diffStr -=- 
+i -=- 
+stringThing -=- 
+
+[StrumNote]
+colorSwap -=- 
+resetAnim -=- 
+noteData -=- 
+sustainReduce -=- 
+player -=- 
+texture -=- 
+skin -=- 
+
+[TankmenBG]
+animationNotes -=- 
+tankSpeed -=- 
+endingOffset -=- 
+goingRight -=- 
+strumTime -=- 
+
+[TitleState]
+muteKeys -=- 
+volumeDownKeys -=- 
+volumeUpKeys -=- 
+initialized -=- 
+blackScreen -=- 
+credGroup -=- 
+credTextShit -=- 
+textGroup -=- 
+ngSpr -=- 
+titleTextColors -=- 
+titleTextAlphas -=- 
+curWacky -=- 
+wackyImage -=- 
+easterEggKeys -=- 
+allowedKeys -=- 
+easterEggKeysBuffer -=- 
+mustUpdate -=- 
+titleJSON -=- 
+updateVersion -=- 
+curVersion -=- 
+gfDance -=- 
+danceLeft -=- 
+titleText -=- 
+swagShader -=- 
+bg -=- 
+easterEgg -=- 
+path -=- 
+animFrames -=- 
+logo -=- 
+firstArray -=- 
+swagGoodArray -=- 
+playJingle -=- 
+newTitle -=- 
+titleTimer -=- 
+pressedEnter -=- 
+keyName -=- 
+black -=- 
+closedState -=- 
+increaseVolume -=- 
+sound -=- 
+easteregg -=- 
+
+[TypedAlphabet]
+onFinish -=- 
+finishedText -=- 
+delay -=- 
+sound -=- 
+volume -=- 
+_timeToUpdate -=- 
+
+[WeekData]
+weeksLoaded -=- 
+weeksList -=- 
+folder -=- 
+songs -=- 
+weekCharacters -=- 
+weekBackground -=- 
+weekBefore -=- 
+storyName -=- 
+weekName -=- 
+freeplayColor -=- 
+startUnlocked -=- 
+hiddenUntilUnlocked -=- 
+hideStoryMode -=- 
+hideFreeplay -=- 
+difficulties -=- 
+fileName -=- 
+disabledMods -=- 
+modsListPath -=- 
+directories -=- 
+originalLength -=- 
+originalLength -=- 
+sexList -=- 
+foundTheTop -=- 
+

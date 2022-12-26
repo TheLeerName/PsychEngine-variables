@@ -44,28 +44,3 @@
 * **Type =** [Array<BPMChangeEvent>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
-## lastChange
-* **Description =** putdeschere
-* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
-* **Default value =** omStep(step)
-
-## curBPM
-* **Description =** putdeschere
-* **Type =** [Float](https://api.haxeflixel.com/Float.html)
-* **Default value =** song.bpm
-
-## totalSteps
-* **Description =** putdeschere
-* **Type =** [Int](https://api.haxeflixel.com/Int.html)
-* **Default value =** 0
-
-## totalPos
-* **Description =** putdeschere
-* **Type =** [Float](https://api.haxeflixel.com/Float.html)
-* **Default value =** 0
-
-## event
-* **Description =** putdeschere
-* **Type =** [BPMChangeEvent](https://api.haxeflixel.com/BPMChangeEvent.html)
-* **Default value =** {stepTime: totalSteps,songTime: totalPos,bpm: curBPM,stepCrochet: calculateCrochet(curBPM)/4}
-

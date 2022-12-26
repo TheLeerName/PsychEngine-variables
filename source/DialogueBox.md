@@ -50,22 +50,3 @@
 * **Description =** putdeschere
 * **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
 
-## hasDialog
-* **Description =** putdeschere
-* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
-
-## face
-* **Description =** putdeschere
-* **Type =** [FlxSprite](https://api.haxeflixel.com/flixel/FlxSprite.html)
-* **Default value =** new FlxSprite(320, 170).loadGraphic(Paths.image('weeb/spiritFaceForward'))
-
-## dialogueStarted
-* **Description =** putdeschere
-* **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
-* **Default value =** false
-
-## dialogueEnded
-* **Description =** putdeschere
-* **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
-* **Default value =** false
-

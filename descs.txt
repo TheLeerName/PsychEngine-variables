@@ -1,0 +1,440 @@
+[Alphabet]
+text -=- String for text of alphabet object
+bold -=- Is text bold?
+letters -=- Array of character objects
+isMenuItem -=- Is text is menu item?
+targetY -=- Y coordinate for repositioning, uses when isMenuItem = true
+changeX -=- Change X on repositioning? Uses when isMenuItem = true
+changeY -=- Change Y on repositioning? Uses when isMenuItem = true
+alignment -=- Alignment of text (LEFT, CENTERED, RIGHT)
+scaleX -=- Scale X
+scaleY -=- Scale Y
+rows -=- Value for repositioning letters by Y
+distancePerItem -=- Distance per item
+startPosition -=- Start position
+
+[AttachedSprite]
+sprTracker -=- AttachedSprite object will be attach to this FlxSprite object
+xAdd -=- X offset
+yAdd -=- Y offset
+angleAdd -=- Angle offset
+alphaMult -=- Multiplicator for alpha
+copyAngle -=- Will AttachedSprite object copy angle of sprTracker?
+copyAlpha -=- Will AttachedSprite object copy alpha of sprTracker?
+copyVisible -=- Will AttachedSprite object copy visible of sprTracker?
+
+[AttachedText]
+offsetX -=- X offset
+offsetY -=- Y offset
+sprTracker -=- AttachedText object will be attach to this FlxSprite object
+copyVisible -=- Will AttachedSprite object copy visible of sprTracker?
+copyAlpha -=- Will AttachedSprite object copy alpha of sprTracker?
+
+[Boyfriend]
+startedDeath -=- Used for death animation
+
+[Character]
+animOffsets -=- Map for animations offsets: animation:String => offsets:Array<Dynamic>
+debugMode -=- Used to block dance animations
+isPlayer -=- Is character on bf side?
+curCharacter -=- Character name
+colorTween -=- Not used tween, disables when substate is opened
+holdTimer -=- Timer for sing animation, uses singDuration variable. Uses when character on opponent side
+heyTimer -=- Timer for hey animation, uses playbackRate variable.
+specialAnim -=- If true, current animation will not be overlapped by idle animation
+animationNotes -=- Uses for pico-speaker character
+stunned -=- If true, stops bf idle animation, key presses will not work, and when you press a key when there was no notes to press for this key notes will not be count as miss (like in ghost tapping)
+singDuration -=- Multiplier of how long a character holds the sing pose
+idleSuffix -=- Suffix for idle animations
+danceIdle -=- Character use "danceLeft" and "danceRight" instead of "idle"
+skipDance -=- Uses for pico-speaker character
+healthIcon -=- Health icon name
+animationsArray -=- Array for animations
+positionArray -=- Array for positions
+cameraPosition -=- Array for positions of camera
+hasMissAnimations -=- Is character has miss animations?
+imageFile -=- Used on Character Editor
+jsonScale -=- Used on Character Editor
+noAntialiasing -=- Used on Character Editor
+originalFlipX -=- Used on Character Editor
+healthColorArray -=- Used on Character Editor
+DEFAULT_CHARACTER -=- In case a character is missing, it will use BF on its place
+
+[ClientPrefs]
+downScroll -=- If true, notes go Down instead of Up, simple enough.
+middleScroll -=- If true, your notes get centered.
+opponentStrums -=- If false, opponent notes get hidden.
+showFPS -=- If false, hides FPS Counter.
+flashing -=- Enter false if you're sensitive to flashing lights!
+globalAntialiasing -=- If false, disables anti-aliasing, increases performance\nat the cost of sharper visuals.
+noteSplashes -=- If false, hitting "Sick!" notes won't show particles.
+lowQuality -=- If true, disables some background details, decreases loading times and improves performance.
+shaders -=- If false, disables shaders. It's used for some visual effects, and also CPU intensive for weaker PCs.
+framerate -=- Pretty self explanatory, isn't it?
+cursing -=- Not used variable
+violence -=- Not used variable
+camZooms -=- If false, the camera won't zoom in on a beat hit.
+hideHud -=- If true, hides most HUD elements.
+noteOffset -=- Note offset in milliseconds
+arrowHSV -=- Array of HSV of notes
+ghostTapping -=- If true, you won't get misses from pressing keys\nwhile there are no notes able to be hit.
+timeBarType -=- What should the Time Bar display?
+scoreZoom -=- If false, disables the Score text zooming\neverytime you hit a note.
+noReset -=- If true, pressing Reset won't do anything.
+healthBarAlpha -=- How much transparent should the health bar and icons be.
+controllerMode -=- Enter true if you want to play with a controller instead of using your Keyboard.
+hitsoundVolume -=- Funny notes does "Tick!" when you hit them.
+pauseMusic -=- What song do you prefer for the Pause Screen?
+checkForUpdates -=- On Release builds, turn this on to check for updates when you start the game.
+comboStacking -=- If false, Ratings and Combo won't stack, saving on System Memory and making them easier to read
+gameplaySettings -=- Map for gameplay settings in freeplay
+comboOffset -=- Array for combo offsets
+ratingOffset -=- Changes how late/early you have to hit for a "Sick!" Higher values mean you have to hit later.
+sickWindow -=- Changes the amount of time you have for hitting a "Sick!" in milliseconds.
+goodWindow -=- Changes the amount of time you have for hitting a "Good" in milliseconds.
+badWindow -=- Changes the amount of time you have for hitting a "Bad" in milliseconds.
+safeFrames -=- Changes how many frames you have for hitting a note earlier or late.
+keyBinds -=- Map of keybinds: name_keybind:String => array_keys:Array<FlxKey>
+defaultKeys -=- Map of defaultkeybinds: name_keybind:String => array_keys:Array<FlxKey>
+
+[Conductor]
+bpm -=- Current BPM of song
+crochet -=- curBeat in milliseconds
+stepCrochet -=- curStep in milliseconds
+songPosition -=- Current position of song
+lastSongPos -=- Used for fix of missed frames
+offset -=- Song offset in milliseconds
+safeZoneOffset -=- safeFrames in milliseconds
+bpmChangeMap -=- Array of BPM changes
+
+[CoolUtil]
+defaultDifficulties -=- Array of default difficulties
+defaultDifficulty -=- The chart that has no suffix and starting difficulty on Freeplay/Story Mode
+difficulties -=- Array with difficulties of current song
+
+[DialogueBox]
+box -=- dialogue box
+curCharacter -=- Current character in dialogue
+dialogueList -=- Array with dialogue texts
+swagDialogue -=- Text object of dialogue
+dropText -=- Text object of dialogue
+finishThing -=- Executes when dialogue finished
+nextDialogueThing -=- Executes when next dialogue switches
+skipDialogueThing -=- Executes when dialogue skipped
+portraitLeft -=- Image object of left portrait
+portraitRight -=- Image object of right portrait
+handSelect -=- Image object of hand
+bgFade -=- Image object of bg
+
+[DialogueBoxPsych]
+dialogue -=- Text object of dialogue
+dialogueList -=- Array with dialogue texts
+finishThing -=- Executes when dialogue finished
+nextDialogueThing -=- Executes when next dialogue switches
+skipDialogueThing -=- Executes when dialogue skipped
+bgFade -=- Image object of bg
+box -=- dialogue box
+textToType -=- Not used variable
+arrayCharacters -=- Array with dialogue characters
+currentText -=- Index of current dialogue
+offsetPos -=- X offset of dialogue character
+textBoxTypes -=- Array with dialogue box types
+curCharacter -=- Current character in dialogue
+dialogueStarted -=- Dialogue started?
+dialogueEnded -=- Dialogue ended?
+LEFT_CHAR_X -=- X of dialogue left character
+RIGHT_CHAR_X -=- X of dialogue right character
+DEFAULT_CHAR_Y -=- Y of dialogue characters
+DEFAULT_TEXT_X -=- X of dialogue text
+DEFAULT_TEXT_Y -=- Y of dialogue text
+LONG_TEXT_ADD -=- Y offset of dialogue text
+scrollSpeed -=- Scroll speed of dialogue
+daText -=- text object of dialogue
+ignoreThisFrame -=- First frame is reserved for loading dialogue images
+closeSound -=- Sound of close dialogue
+closeVolume -=- Volume of sound of close dialogue
+
+[FunkinLua]
+Function_Stop -=- Uses in "return Function_Stop;" to stop run lua function
+Function_Continue -=- Uses in "return Function_Continue;" to continue run lua function
+Function_StopLua -=- Uses in "return Function_Continue;" to stop run lua code in function
+lua -=- Current lua state
+camTarget -=- Not used variable
+scriptName -=- Name of current script
+closed -=- Is script closed?
+hscript -=- HScript class
+
+[GameOverSubstate]
+boyfriend -=- Boyfriend object for bf
+camFollow -=- Uses for camera follow
+camFollowPos -=- Uses for camera follow
+updateCamera -=- Uses for camera follow
+playingDeathSound -=- Uses for playing death sound
+stageSuffix -=- Not used variable
+characterName -=- Current bf name
+deathSoundName -=- Current death sound name
+loopSoundName -=- Current loop sound name
+endSoundName -=- Current end sound name
+instance -=- Instance for current state
+
+[HealthIcon]
+sprTracker -=- HealthIcon object will be attach to this FlxSprite object
+isOldIcon -=- If true, uses bf old icon
+isPlayer -=- Is character on bf side?
+char -=- Current character name
+
+[Highscore]
+weekScores -=- Map of week scores: weekName:String => score:Int
+songScores -=- Map of song scores: songName:String => score:Int
+songRating -=- Map of song ratings: songName:String => rating:Float
+
+[Main]
+gameWidth -=- Width of the game in pixels
+gameHeight -=- Height of the game in pixels
+initialState -=- The FlxState the game starts with
+zoom -=- If -1, zoom is automatically calculated to fit the window dimensions
+framerate -=- How many frames per second the game should run at
+skipSplash -=- Whether to skip the flixel splash screen that appears in release mode
+startFullscreen -=- Whether to start the game in fullscreen on desktop targets
+fpsVar -=- FPS object for fps counter
+
+[MusicBeatState]
+curSection -=- Current section
+stepsToDo -=- Used for calculate curStep
+curStep -=- Current step
+curBeat -=- Current beat
+curDecStep -=- Current decimal step
+curDecBeat -=- Current decimal beat
+controls -=- Controls for input
+camBeat -=- Not used variable
+
+[MusicBeatSubstate]
+lastStep -=- Last step
+curStep -=- Current step
+curBeat -=- Current beat
+curDecStep -=- Current decimal step
+curDecBeat -=- Current decimal beat
+controls -=- Controls for input
+
+[Note]
+extraData -=- Not used variable
+strumTime -=- Strum time of current note in milliseconds
+mustPress -=- If true, note will be count on bf side
+noteData -=- 0 = Left note, 1 = Down note, 2 = Up note, 3 = Right note
+canBeHit -=- Is note can be hit?
+tooLate -=- Is note missed?
+wasGoodHit -=- Is note pressed?
+ignoreNote -=- If true, note ignores by opponent, and miss this note not counts as miss
+hitByOpponent -=- Is note pressed by opponent?
+noteWasHit -=- Not used variable
+prevNote -=- Previous note, used for sustains
+nextNote -=- Next note, used for sustains
+spawned -=- Is note spawned?
+tail -=- Array of sustains
+parent -=- Not used variable
+blockHit -=- If true, player cant hit this note
+sustainLength -=- Length of sustain note
+isSustainNote -=- Is note sustain?
+noteType -=- Name of note type
+eventName -=- Name of event, uses for event note
+eventLength -=- Length of event, uses for event note
+eventVal1 -=- 1 value of event, uses for event note
+eventVal2 -=- 2 value of event, uses for event note
+colorSwap -=- Shader for color swap note
+inEditor -=- Is note in charting menu?
+animSuffix -=- Suffix of animation note, uses when note type is "Alt Animation"
+gfNote -=- Is note will be pressed by gf? Uses when note type is "GF Sing"
+earlyHitMult -=- Multiplicator for early hit note
+lateHitMult -=- Multiplicator for late hit note
+lowPriority -=- Uses when note type is "Hurt Note"
+swagWidth -=- Width of note
+colArray -=- Array with strum note names
+pixelInt -=- Array with strum note indexes
+noteSplashDisabled -=- Is note hasnt splash?
+noteSplashTexture -=- Name of note splash texture
+noteSplashHue -=- Hue of note splash texture
+noteSplashSat -=- Saturation of note splash texture
+noteSplashBrt -=- Brightness of note splash texture
+offsetX -=- X offset of note
+offsetY -=- Y offset of note
+offsetAngle -=- Angle offset of note
+multAlpha -=- Multiplicator for alpha of note
+multSpeed -=- Multiplicator for scroll speed of note
+copyX -=- Is note calculates X? Can be used for custom positioning of note
+copyY -=- Is note calculates Y? Can be used for custom positioning of note
+copyAngle -=- Is note calculates angle? Can be used for custom positioning of note
+copyAlpha -=- Is note calculates alpha? Can be used for custom editing alpha of note
+hitHealth -=- Value of heal on hit note
+missHealth -=- Value of hurt on miss note
+rating -=- Rating name of note
+ratingMod -=- 9 = unknown, 0.25 = shit, 0.5 = bad, 0.75 = good, 1 = sick
+ratingDisabled -=- Is rating disabled on this note?
+texture -=- Name of current file name of notes
+noAnimation -=- Is note hasnt animation?
+noMissAnimation -=- Is note hasnt miss animation?
+hitCausesMiss -=- If true, pressing note counts as miss
+distance -=- Unfinished variable, distance of note
+hitsoundDisabled -=- Is hitsound disabled of pressing this note?
+
+[NoteSplash]
+colorSwap -=- Shader for color swap note splash
+idleAnim -=- Animation name of idle note splash
+textureLoaded -=- Not used variable
+
+[PlayState]
+STRUM_X -=- Start X of playerStrums
+STRUM_X_MIDDLESCROLL -=- Start X of playerStrums when middleScroll enabled
+ratingStuff -=- Array of ratings: [name:String, percent:Float]
+isCameraOnForcedPos -=- If true, camera wont move
+boyfriendMap -=- Map of loaded boyfriends: name:String => bf:Boyfriend
+dadMap -=- Map of loaded dads: name:String => char:Character
+gfMap -=- Map of loaded gfs: name:String => char:Character
+variables -=- Map of modchart variables: name:String => value:Dynamic
+modchartTweens -=- Map of modchart tweens: name:String => tween:FlxTween
+modchartSprites -=- Map of modchart sprites: name:String => sprite:ModchartSprite
+modchartTimers -=- Map of modchart timers: name:String => timer:FlxTimer
+modchartSounds -=- Map of modchart sounds: name:String => sound:FlxSound
+modchartTexts -=- Map of modchart texts: name:String => text:FlxText
+modchartSaves -=- Map of modchart saves: name:String => save:FlxSave
+BF_X -=- Start X of boyfriend
+BF_Y -=- Start Y of boyfriend
+DAD_X -=- Start X of dad
+DAD_Y -=- Start Y of dad
+GF_X -=- Start X of gf
+GF_Y -=- Start Y of gf
+songSpeedTween -=- Tween object of songSpeed
+songSpeed -=- Current scroll speed of song
+songSpeedType -=- Scroll speed type
+noteKillOffset -=- Used for killing extremely late notes
+playbackRate -=- Playback rate of song
+boyfriendGroup -=- Object group of boyfriends
+dadGroup -=- Object group of dads
+gfGroup -=- Object group of gfs
+curStage -=- Current stage name
+isPixelStage -=- Is stage pixel?
+SONG -=- JSON object of song data
+isStoryMode -=- Is song started from story mode?
+storyWeek -=- Current week
+storyPlaylist -=- Current playlist of songs in week
+storyDifficulty -=- Current difficulty
+spawnTime -=- Note spawns earlier by this value
+vocals -=- Sound object of vocals
+dad -=- Current dad object
+gf -=- Current gf object
+boyfriend -=- Current boyfriend object
+notes -=- Note group of spawned notes
+unspawnNotes -=- Array of notes to spawn
+eventNotes -=- Array of event notes
+strumLine -=- Strumline object
+camFollow -=- Used for camera follow
+camFollowPos -=- Used for camera follow
+prevCamFollow -=- Used for camera follow
+prevCamFollowPos -=- Used for camera follow
+strumLineNotes -=- StrumNote group for static notes
+opponentStrums -=- StrumNote group for static notes on opponent side
+playerStrums -=- StrumNote group for static notes on player side
+grpNoteSplashes -=- NoteSplashes group for note splashes
+camZooming -=- Is camera zooming? Sets true on opponentNoteHit()
+camZoomingMult -=- Multiplicator of camera zoom
+camZoomingDecay -=- Decay of camera zoom
+curSong -=- Current song name
+gfSpeed -=- Speed of dance gf
+health -=- Current health
+combo -=- Value of pressed notes in a row
+healthBarBG -=- Image object for healthBar BG
+healthBar -=- Health bar object
+songPercent -=- Percent of time. Used for timeBar
+timeBarBG -=- Image object for timeBar BG
+timeBar -=- Time bar object
+ratingsData -=- Array of ratings
+sicks -=- Value of pressed sicks
+goods -=- Value of pressed goods
+bads -=- Value of pressed bads
+shits -=- Value of pressed shits
+generatedMusic -=- Is music started?
+endingSong -=- Is song ending?
+startingSong -=- Is song starting? 
+updateTime -=- Used for timeBar
+changedDifficulty -=- Used for achievements
+chartingMode -=- Is charting mode opened?
+healthGain -=- Multiplicator of gain health
+healthLoss -=- Multiplicator of loss health
+instakillOnMiss -=- If true, miss sets health to 0
+cpuControlled -=- If true, bot play is enabled
+practiceMode -=- If true, practice mode is enabled
+botplaySine -=- Used for alpha calculating of botplay text
+botplayTxt -=- Text object for botplay text
+iconP1 -=- HealthIcon object for player icon
+iconP2 -=- HealthIcon object for opponent icon
+camHUD -=- Camera for HUD
+camGame -=- Camera for Game
+camOther -=- Camera for Pause Menu
+cameraSpeed -=- Camera follow speed
+dialogue -=- Array of dialogue texts
+dialogueJson -=- DialogueFile object
+songScore -=- Current score
+songHits -=- Current hits
+songMisses -=- Current misses
+scoreTxt -=- Text object for score text
+timeTxt -=- Text object for time text
+scoreTxtTween -=- Tween object for score text
+campaignScore -=- Current week score
+campaignMisses -=- Current week misses
+seenCutscene -=- Used for original weeks cutscenes
+deathCounter -=- Current deaths
+defaultCamZoom -=- Default camGame zoom
+daPixelZoom -=- Used for pixel stage
+singAnimations -=- Array of sing animation names
+inCutscene -=- Is player in cutscene?
+skipCountdown -=- Is countdown will be skipped?
+songLength -=- Length of song
+boyfriendCameraOffset -=- Offsets for camera follow to boyfriend
+opponentCameraOffset -=- Offsets for camera follow to dad
+girlfriendCameraOffset -=- Offsets for camera follow to gf
+storyDifficultyText -=- Used for Discord Rich Presence
+detailsText -=- Used for Discord Rich Presence
+detailsPausedText -=- Used for Discord Rich Presence
+keysPressed -=- Used for achievements
+boyfriendIdleTime -=- Used for achievements
+boyfriendIdled -=- Used for achievements
+instance -=- Instance for current state
+luaArray -=- Array of lua states
+luaDebugGroup -=- Array of debug lua texts
+introSoundsSuffix -=- Suffix for intro sounds
+debugKeysChart -=- Array of keys to open chart menu
+debugKeysCharacter -=- Array of keys to open character editor
+keysArray -=- Array of keybinds
+controlArray -=- Used for note press
+precacheList -=- Map of precaching assets: assetName:String => type:String
+lastRating -=- Stores the last judgement object
+lastCombo -=- Stores the last combo sprite object
+lastScore -=- Stores the last combo score objects in an array
+
+[StrumNote]
+colorSwap -=- Shader for color swap strum note
+resetAnim -=- Time to going idle
+noteData -=- 0 = Left note, 1 = Down note, 2 = Up note, 3 = Right note
+direction -=- Angle of strumline, not finished variable
+downScroll -=- Is downScroll enabled? Not finished variable
+sustainReduce -=- If true, sustain not reduces
+player -=- 1 = bf side, 2 = opponent side
+texture -=- Name of current file name of notes
+
+[WeekData]
+weeksLoaded -=- Map of loaded weeks: weekName:String => week:WeekData
+weeksList -=- Array of weeks list
+folder -=- Folder of week
+songs -=- songs of week
+weekCharacters -=- Characters of week
+weekBackground -=- Background of week
+weekBefore -=- Week to replace
+storyName -=- Description of story
+weekName -=- Name of week
+freeplayColor -=- Color of bg in freeplay
+startUnlocked -=- Is week unlocked on start?
+hiddenUntilUnlocked -=- Is week hidden until unlocked?
+hideStoryMode -=- Is week hidden in story mode?
+hideFreeplay -=- Is week hidden in freeplay?
+difficulties -=- Difficulties of week
+fileName -=- File name of week
+

@@ -27,8 +27,3 @@
 * **Description =** putdeschere
 * **Type =** [Controls](https://api.haxeflixel.com/Controls.html)
 
-## shit
-* **Description =** putdeschere
-* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
-* **Default value =** tor.songPosition - ClientPrefs.noteOffset) - lastChange.songTime) / lastChange.stepCrochet
-

@@ -207,23 +207,3 @@
 * **Type =** [Map<String, Array<FlxKey>>](https://api.haxeflixel.com/Map.html)
 * **Default value =** null
 
-## save
-* **Description =** putdeschere
-* **Type =** [FlxSave](https://api.haxeflixel.com/flixel/util/FlxSave.html)
-* **Default value =** new FlxSave()
-
-## save
-* **Description =** putdeschere
-* **Type =** [FlxSave](https://api.haxeflixel.com/flixel/util/FlxSave.html)
-* **Default value =** new FlxSave()
-
-## i
-* **Description =** putdeschere
-* **Type =** [Int](https://api.haxeflixel.com/Int.html)
-* **Default value =** 0
-
-## len
-* **Description =** putdeschere
-* **Type =** [Int](https://api.haxeflixel.com/Int.html)
-* **Default value =** copiedArray.length
-

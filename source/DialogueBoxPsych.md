@@ -137,38 +137,3 @@
 * **Type =** [Float](https://api.haxeflixel.com/Float.html)
 * **Default value =** 1
 
-## animName
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** box.animation.curAnim.name
-
-## animName
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** box.animation.curAnim.name
-
-## lastBoxType
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** ''
-
-## animName
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** curDialogue.boxState
-
-## boxType
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** textBoxTypes[0]
-
-## lePosition
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** arrayCharacters[character].jsonFile.dialogue_pos
-
-## char
-* **Description =** putdeschere
-* **Type =** [DialogueCharacter](https://api.haxeflixel.com/DialogueCharacter.html)
-* **Default value =** arrayCharacters[character]
-

@@ -54,8 +54,3 @@
 * **Static**
 * **Type =** [GameOverSubstate](https://api.haxeflixel.com/GameOverSubstate.html)
 
-## exclude
-* **Description =** putdeschere
-* **Type =** [Array<Int>](https://api.haxeflixel.com/Array.html)
-* **Default value =** []
-

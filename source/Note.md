@@ -285,28 +285,3 @@
 * **Type =** [Bool](https://api.haxeflixel.com/Bool.html)
 * **Default value =** false
 
-## lastNoteScaleToo
-* **Description =** putdeschere
-* **Type =** [Float](https://api.haxeflixel.com/Float.html)
-* **Default value =** 1
-
-## originalHeightForCalcs
-* **Description =** putdeschere
-* **Type =** [Float](https://api.haxeflixel.com/Float.html)
-* **Default value =** 6
-
-## skin
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** texture
-
-## lastScaleY
-* **Description =** putdeschere
-* **Type =** [Float](https://api.haxeflixel.com/Float.html)
-* **Default value =** scale.y
-
-## blahblah
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** arraySkin.join('/')
-

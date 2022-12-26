@@ -16,8 +16,3 @@
 * **Type =** [Array<String>](https://api.haxeflixel.com/Array.html)
 * **Default value =** []
 
-## fileSuffix
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** difficulties[num]
-

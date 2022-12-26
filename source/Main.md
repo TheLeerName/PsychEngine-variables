@@ -38,27 +38,3 @@
 * **Static**
 * **Type =** [FPS](https://api.haxeflixel.com/openfl/display/FPS.html)
 
-## stageHeight
-* **Description =** putdeschere
-* **Type =** [Int](https://api.haxeflixel.com/Int.html)
-* **Default value =** Lib.current.stage.stageHeight
-
-## ratioY
-* **Description =** putdeschere
-* **Type =** [Float](https://api.haxeflixel.com/Float.html)
-* **Default value =** stageHeight / gameHeight
-
-## path
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-
-## callStack
-* **Description =** putdeschere
-* **Type =** [Array<StackItem>](https://api.haxeflixel.com/Array.html)
-* **Default value =** CallStack.exceptionStack(true)
-
-## dateNow
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** Date.now().toString()
-

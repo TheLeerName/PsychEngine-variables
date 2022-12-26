@@ -26,8 +26,3 @@
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** null
 
-## skin
-* **Description =** putdeschere
-* **Type =** [String](https://api.haxeflixel.com/String.html)
-* **Default value =** 'NOTE_assets'
-

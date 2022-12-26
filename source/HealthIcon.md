@@ -17,8 +17,3 @@
 * **Type =** [String](https://api.haxeflixel.com/String.html)
 * **Default value =** ''
 
-## file
-* **Description =** putdeschere
-* **Type =** [Dynamic](https://api.haxeflixel.com/Dynamic.html)
-* **Default value =** Paths.image(name)
-
